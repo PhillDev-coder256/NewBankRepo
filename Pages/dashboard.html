@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="header.js" type="text/javascript" defer></script>
+    <script src="footer.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="dashboard.css">
+    <!-- <link rel="stylesheet" href="home.css"> -->
+    <title>Dashboard</title>
+</head>
+<body>
+    <br><br><br>
+    <div class="main-content" >
+        
+        <div onclick="displayHiddenLinks()" class="hide-menu" id="hide-menu" >
+            <div class="left">
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div  class="right">
+                <p>Dashboard</p>
+            </div>
+        </div>
+
+        
+        <div class="section-1" id="hide-links" >
+            <br><br>
+            <div class="label">
+                <br>
+                <div class="logo">
+                    <div class="left">
+                        <img src="./photos/logo3.png" alt="Logo">
+                    </div>
+                    <div class="right">
+                        <p>ID No.</p>
+                        <p>Company Name</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="content" >
+                <div class="links">
+                    <ul>
+                        <li>
+                            <span></span>
+                            <a href="dashboard.html">Dashboard</a>
+                        </li>
+                        <li>
+                            <span></span>
+                            <a href="profile.html">My Profile</a>
+                        </li>
+                        <li>
+                            <span></span>
+                            <a href="loan-calc.html">Loan Calculator</a>
+                        </li>
+                        <li>
+                            <span></span>
+                            <a href="p-loans.html">Loan</a>
+                        </li>
+                        <li>
+                            <span></span>
+                            <a href="buy-points-how.html">Buy points</a>
+                        </li>
+                        <li>
+                            <span></span>
+                            <a href="invest-how.html">Investment</a>
+                        </li>
+                        <li>
+                            <span></span>
+                            <a href="wallet.html">Wallet</a>
+                        </li>
+                        <li>
+                            <span></span>
+                            <a href="settings.html">Settings</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="to-flex">
+            
+            <div class="section-2">
+                <br><br>
+                <div class="main">
+                    
+                    <div class="title-label">
+                        <p>Dashboard</p>
+                    </div>
+                    <div class="left-widget">
+                        <br><br><br>
+                        <div class="wallet">
+                            <form action="">
+                                <div class="wallet-info">
+                                    <div class="left-dropdown">
+                                        $ 0 in Deposit
+                                    </div>
+                                    <div class="right-dropdown">
+                                        $ 0 in Wallet
+                                    </div>
+                                    
+                                </div>
+                                
+                            </form>
+        
+                            <p style="text-align: center;">Your TAIM Credit Score</p>
+        
+                            <div onmouseenter="move()" onhover="move()" id="progressBar">
+                                <div onclick="move()" id="bar"></div>
+                                <div  id="bar-move">
+                                    <div id="percentage">
+                                        <!-- Percentage Counter -->
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <!-- <br> -->
+                            <div class="content">
+                                <div class="adverts">
+                                    <br><br><br>
+                                    <p style="text-align: center;">Adverts</p>
+                                    <br><br><br>
+                                </div>
+                                <div class="p-loan">
+                                    <div class="label">
+                                        Personal Loan
+                                    </div>
+                                    <div class="button">
+                                        <a href="">APPLY NOW</a>
+                                    </div>
+                                </div>
+                                <div class="b-loan">
+                                    <div class="label">
+                                        Business Loan
+                                    </div>
+                                    <div class="button">
+                                        <a href="">APPLY NOW</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <br><br><br> -->
+                            <p style="text-align: left;">NOTE: Purchase Credit Score Points to increase your loan limit instantly.</p>
+        
+                            <script>
+                                var i = 0;
+                                function move(){
+                                    if(i == 0){
+                                        i = 1;
+                                        var elem = document.getElementById("bar");
+                                        var width = 0;
+                                        var id = setInterval(frame, 100);
+                                        
+                                        function frame(){
+                                            if(width >= 100){
+                                                clearInterval(id);
+                                                i = 0;
+                                            }else{
+                                                width++;
+                                                elem.style.width = width + "%";
+                                            }
+                                            document.getElementById("percentage").innerHTML = width;
+                                        }
+                                        
+                                    }
+                                }
+                            </script>
+                            
+                        </div>
+                    </div>
+                    <!-- <div class="right-widget">
+                        <br><br><br><br>
+                        <div class="right-column hidden">
+                            <div class="top-stories">
+                                <div class="title">
+                                    <p>TOP STORIES</p>
+                                </div>
+                                <div class="rows">
+                                    <div class="row">
+                                        <a href="">
+                                            <div class="left">
+                                                <img src="./photos/squid.jpeg" alt="">
+                                            </div>
+                                            <div class="right">
+                                                <h1>SQUID GAME BACK IN CINEMA</h1>
+                                            <hr>
+                                            <p>Netflix confirms the viral rumors about  the return of the famour game show this November...</p>
+                                            <button type="button">READ MORE</button>
+                                            </div>
+                                            
+                                            
+                                        </a>
+                                        
+                                    </div>
+                                    <div class="row">
+                                        <a href="">
+                                            <div class="left">
+                                                <img src="./photos/squid.jpeg" alt="">
+                                            </div>
+                                            <div class="right">
+                                                <h1>SQUID GAME BACK IN CINEMA</h1>
+                                            <hr>
+                                            <p>Netflix confirms the viral rumors about  the return of the famour game show this November...</p>
+                                            <button type="button">READ MORE</button>
+                                            </div>
+                                            
+                                            
+                                        </a>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div> -->
+                    
+                </div>
+            </div>
+            
+            <div class="section-3">
+                
+                <!-- <div class="advert">
+                    <p>IMAGE ADVERT</p>
+                </div> -->
+                <br><br>
+                <div class="main">
+                    
+                    <div class="title">
+                        <h3>NOW TRENDING</h3>
+                        <hr>
+                        
+                    </div>
+                    <div class="movie-container">
+                        <a href="">
+                            <div class="left">
+                                <img src="./photos/squid.jpeg" alt="">
+                            </div>
+                            <div class="right">
+                                <h4>SQUID GAME BACK IN CINEMA</h4>
+                                <p>Netflix confirms the viral rumors about the return of the famour game show this November...</p>
+                                <button value="">READ MORE</button>
+                            </div>
+                        </a>
+                    </div>
+                    <hr class="hr">
+                    <br>
+                    <p class="p-text">We represent Film Productions and Practitioners on the international film market. We priotize independent film-makers and film freelancers because we know how stiff it is to brand your worth without a recognized agency.</p>
+                    <!-- <br> -->
+                    <!-- <div class="people">
+                        <div class="p-1">
+                            <div class="left">
+                                <img src="./photos/squid.jpeg" alt="">
+                            </div>
+                            <div class="right">
+                                <div class="p-row">
+                                    <h5>Santos Mc.Tonny</h5>
+                                    <span></span>
+                                </div>
+                                <div class="p-row">
+                                    <p>Actor, Set Designer</p>
+                                    <p>Australia</p>
+                                </div>
+                                
+                                <p>Rain is not a miracle when you have a well</p>
+                            </div>
+                        </div>
+                        <div class="p-1" id="hide-1" >
+                            <div class="left">
+                                <img src="./photos/squid.jpeg" alt="">
+                            </div>
+                            <div class="right">
+                                <div class="p-row">
+                                    <h5>Natil Lorey</h5>
+                                    <span></span>
+                                </div>
+                                <div class="p-row">
+                                    <p>Actress </p>
+                                    <p>Netherlands</p>
+                                </div>
+                                <p>Love means the most</p>
+                            </div>
+                        </div>
+                        <div class="p-1">
+                            <div class="left">
+                                <img src="./photos/squid.jpeg" alt="">
+                            </div>
+                            <div class="right">
+                                <div class="p-row">
+                                    <h5>Maseko Elvis</h5>
+                                    <span></span>
+                                </div>
+                                <div class="p-row">
+                                    <p>Writer</p>
+                                <p>Botswana</p>
+                                </div>
+                                <p>Life is full of stories to tell</p>
+                            </div>
+                        </div>
+                        
+                        <div class="more">
+                            <input type="button" value="SEE MORE">
+                        </div>
+                    </div> -->
+                    <div class="events">
+                        <div class="title">
+                            <p>UPCOMING EVENTS</p>
+                        </div>
+                        <div class="events-container">
+                            <div class="container">
+                                <div class="photo">
+                                    <img src="./photos/movie-event-1.jpg" alt="">
+                                </div>
+                                <div class="caption">
+                                    <h5>VEMA FILM FESTIVAL</h5>
+                                    <p>21<sup>st</sup> July 2023 <span>DENMARK</span></p>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="photo">
+                                    <img src="./photos//movie-event-1.jpg" alt="">
+                                </div>
+                                <div class="caption">
+                                    <h5>ROOFTOP MEETUP 2nd EDITION</h5>
+                                    <p>23<sup>rd</sup> June 2023 <span>CALIFORNIA</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+<script>
+    function displayHiddenLinks(){
+        var i = document.getElementById('hide-links')
+        if(i.style.display === 'block'){
+            i.style.display = 'none';
+        }else{
+            i.style.display = 'block';
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,258 @@
+
+.main .title-label{
+    display: none;
+}
+.main-content .section-2 .main{
+    width: 100%;
+    
+}
+.main .content p{
+    font-weight: bold;
+    color: #3b3b3b;
+    font-size: 17px;
+}
+.dark-mode .main .content p{
+    color: #cac8c8;
+}
+.main .content .next{
+    display: flex;
+}
+.main .content .next:hover{
+    opacity: 0.7;
+}
+.main .content .next .rect{
+    padding: 1% 2%;
+    color: #fff;
+
+    background: #150983;
+}
+.main .content .next .rect span{
+    color: #fff;
+}
+.dark-mode .main .content .next .rect{
+    background-color: #c9c2c2;
+}
+.main .content .next .tria{
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 20px solid #150983;
+    transform: rotate(90deg);
+    margin-left: -20px;
+}
+
+.dark-mode .main .content .next .tria{
+    border-bottom: 20px solid #c9c2c2;
+}
+.section-2 .main .head{
+    background: #6052d8;
+    display: flex;
+    margin: 0 5%;
+    width: 100%;
+    position: fixed;
+    width: 43%;
+    margin: 0 2%;
+    
+}
+.dark-mode .section-2 .main .head{
+    background: #000;
+    border: 1px solid gray;
+}
+.section-2 .main .head ul{
+    width: 100%;
+    display: flex;
+    padding: 3% 5%;
+    list-style: none;
+    justify-content: space-between;
+    justify-items: left;
+}
+.section-2 .main .head ul li hr{
+    width: 100%;
+    margin-top: 5px;
+}
+.section-2 .main .head ul li a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 15px;
+}
+.section-2 .main .head ul li a:hover{
+    opacity: 0.6;
+}
+.section-2 .main .content{
+    margin: 0 5%;
+}
+.section-2 .main .content .span{
+    border: 1.5px solid gray;
+    width: 100%;
+    margin: 2% 0;
+    padding: 4% 2%;
+    display: grid;
+    grid-template-columns: 15% 60% 25%;
+}
+.section-2 .main .content .span .middle p{
+    font-weight: bold;
+    opacity: 0.7;
+}
+.section-2 .main .content .span .left{
+    background: darkblue;
+    align-items: center;
+    display: grid;
+    /* padding: 20% 3%; */
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+.dark-mode .section-2 .main .content .span .left{
+    background: #000;
+    border: 1px solid gray;
+}
+.section-2 .main .content .span .left p{
+    text-align: center;
+}
+.section-2 .main .content .span .middle{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10%;
+    /* width: 100%; */
+    /* justify-content: space-between; */
+
+}
+.section-2 .main .content .span .middle h3,
+.section-2 .main .content .span .middle p{
+    margin: 3px 0;
+}
+.section-2 .main .content .span .right{
+    display: grid;
+    grid-template-columns: 100px;
+    /* border: 1px solid; */
+    /* align-items: center; */
+}
+.section-2 .main .content .span .right a{
+    display: grid;
+    width: 100%;
+    align-items: center;
+    margin: 0 0 0 10%;
+    text-decoration: none;
+}
+.section-2 .main .content .span .right a button{
+    background: #fff;
+    padding: 5% 9px;
+    border: 2px solid  gray;
+    border-radius: 3px;
+    outline: none;
+    color: #ff5202;
+    font-weight: bold;
+    cursor: pointer;
+}
+.dark-mode .section-2 .main .content .span .right a button{
+    color: rgb(0, 255, 255);
+    background: #000;
+}
+.section-2 .main .content .span .right a button:hover{
+    opacity: 0.7;
+}
+
+
+@media screen and (max-width: 1024px){
+    .section-2 .main .content .span{
+        grid-template-columns: 15% 50% 35%;
+        margin: 7% 0;
+    }
+    .main-content #hide-menu{
+        /* border: 1px solid; */
+        display: grid;
+        grid-template-columns: 5% 93%;
+    }
+    .main-content #hide-menu .right{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* border: 1px solid; */
+        width: 100%;
+    }
+    .main-content #hide-menu .right a{
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        padding: 0.5% 2%;
+        border: 1px solid #fff;
+        border-radius: 2px;
+    }
+    .main-content #hide-menu .right a:hover{
+        opacity: 0.7;
+    }
+    .main-content #hide-menu .left{
+        width: 100%;
+    }
+    .main .head{
+        /* border: 1px solid; */
+        top: 110px;
+        /* width: 100%; */
+    }
+}
+@media screen and (max-width: 835px){
+    .section-2 .main .content .span{
+        margin: 7% 0;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 777px){
+    .section-2 .main .content .span{
+        margin: 10% 0;
+        font-size: 13px;
+    }
+}
+/* This   is   where the mobile view starts */
+@media screen and (max-width: 720px){
+    
+        .main-content{
+            display: block;
+        }
+        .main-content .section-2 .main{
+            display: block;
+            
+        }
+        .main .content{
+            padding: 5% 0;
+            /* border: 1px solid; */
+        }
+        .section-2 .main .content .span{
+            margin: 5% 0;
+            font-size: 15px;
+        }
+        .section-2 .main .head{
+            display: flex;
+            margin: 2% 5% 20% 5%;
+            width: 90%;
+            position: fixed;
+            /* width: 43%; */
+            /* margin: 0 2%; */
+            
+        }
+    }
+    @media screen and (max-width: 390px){
+        .section-2 .main .content .span{
+            margin: 5% 0;
+            font-size: 10px;
+            grid-template-columns: 10% 50% 40%;
+        }
+        .section-2 .main .content .span .right a button{
+            font-size: 12px;
+            margin-right: 12%;
+        }
+        .section-2 .main .head ul li a{
+            font-size: 12px;
+        }
+    }
+    @media screen and (max-width: 300px){
+        .section-2 .main .content .span{
+            margin: 5% 0;
+            font-size: 7px;
+        }
+    }
+    @media screen and (max-width: 310px){
+        .section-2 .main .content .span{
+            /* margin: 5% 0;
+            font-size: 10px; */
+        }
+    }
