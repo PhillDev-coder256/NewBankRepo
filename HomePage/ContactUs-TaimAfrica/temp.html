@@ -1,0 +1,247 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(14, 8, 43);
+    height: 8vh;
+}
+
+nav .logo{
+    width: 20%;
+    height: 20%;
+    /* border-radius: 10px; */
+    border: 1px solid;
+    color: #fff;
+    margin-left: 2%;
+}
+
+nav form {
+    display: flex;
+    margin: 0 5%;
+    width: 20%;
+}
+
+nav form input{
+    width: 95%;
+    border: none;
+    background-color: #d1dbe9;
+    border-radius: 4px;
+    height: 30px;
+}
+
+nav .links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    /* border: 1px solid; */
+}
+.links .nav-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+}
+
+.nav-links li i{
+    display: none;
+}
+
+.links .hidden{
+    color: #000;
+}
+
+.nav-links li{
+    list-style: none;
+    margin: 0 2%;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: #d1dbe9;
+}
+.nav-links .user-profile{
+    display: flex;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    margin-left: auto;
+    width: 50%;
+    margin: -36.5vh 0% 0 45vh;
+    /* padding: 0 2%; */
+    /* border: 1px solid; */
+    height: 80vh;
+    /* padding: 1vh 0.5vh; */
+}
+.user-profile #hide li{
+    /* display: none; */
+}
+
+.nav-links .hidden-account-info{
+    display: none;
+}
+.hidden-account-info{
+    margin-right: -5%;
+}
+.hidden-account-info a{
+    margin-left: 2%;
+
+}
+.hidden-account-info i{
+    color: #fff;
+}
+
+.user-profile img{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin: -55px 12% 0 0;
+}
+
+.user-profile i{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 30px;
+    margin-left: auto;
+    right: 5%;
+    position: absolute;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+.user-profile .login{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ececf3;
+    border-radius: 3px;
+    text-align: center;
+    height: 4.5vh;
+    margin: 56vh 20% 0 0;
+}
+
+.user-profile a{
+    text-align: center;
+    margin-right: auto;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    
+}
+
+
+nav .burger{
+    display: none;
+    border: solid 1px #d1dbe9;
+    border-radius: 3px;
+}
+
+.burger div{
+    background-color: #d1dbe9;
+    height: 4px;
+    width: 30px;
+    margin: 5px;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <div class="logo">
+            <!-- <img src="./photos/family-photo.gif" alt=""> -->
+        </div>
+        <!-- <img src="./photos/bg.jpg" alt="logo"> -->
+        <form action="">
+            <input type="search">
+        </form>
+
+        <div class="links">
+                <ul class="nav-links">
+                    <li class="right-link">
+                        <i class="fa fa-file-video-o" aria-hidden="true"></i>
+                        <a href="#">Movies</a></li>
+                    <li class="right-link">
+                        <i class="fa fa-video-camera" aria-hidden="true"></i>
+                        <a href="#">Series</a></li>
+                    <li class="right-link">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <a href="#">People</a></li>
+                    <li class="right-link">
+                        <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                        <a href="#">News</a></li>
+                    <li class="right-link">
+                        <i class="fa fa-money" aria-hidden="true"></i>
+                        <a href="#">Wallet</a></li>
+                    <li class="right-link">
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                        <a href="#">Jobs</a></li>
+    
+                    <li class="user-profile">
+                        <img onclick="displayHiddenAccountInfo()" src="./photos/bg.jpg" alt="username">
+                        <i onclick="displayHiddenAccountInfo()"   class="fa fa-sort-desc" aria-hidden="true"></i>
+                        <a href="#" class="login">Login </a>
+                        <div id="hide">
+                            <li  class="hidden-account-info">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <a href="">My Profile</a></li>
+                            <li class="hidden-account-info">
+                                <i class="fa fa-tachometer" aria-hidden="true"></i>
+                                <a href="">Dashboard</a></li>
+                            <li class="hidden-account-info">
+                                <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                <a href="">LogOut</a></li>
+                        </div>
+                        
+                        
+                    </li>
+                        
+                    
+                </ul>
+
+                <script>
+                    function displayHiddenAccountInfo(){
+                        var i = document.getElementById('hide');
+                        if(i.style.display === "block"){
+                            i.style.display = "none";
+                        }else{
+                            i.style.display = "block"
+                        }
+                    }
+                </script>
+                
+            
+        </div>
+
+        <div  class="burger" >
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        
+    </nav>
+
+
+</body>
+</html>

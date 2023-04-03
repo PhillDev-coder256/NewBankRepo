@@ -1,0 +1,356 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./about-us.css">
+    <link rel="stylesheet" href="./media-queries/@contact-us.css">
+    <script src="https://kit.fontawesome.com/ecf5c1768c.js" crossorigin="anonymous"></script>
+    <title>About us </title>
+</head>
+<body>
+	<div class="container">
+		<!-- Header -->
+		<div class="header">
+			<div class="logo">
+				<img src="./photos/logo.png" alt="TAIM AFRICA LOGO">
+			</div>
+			<div class="search">
+				<input type="search" value="" placeholder="Search for Movies, TV Shows, and People ">
+				<i class="fa fa-search" aria-hidden="true"></i>
+				
+			</div>
+			<div class="nav-links hide">
+				<ul>
+					<li>
+						
+					<a href="#">Movies</a></li>
+					<li><a href="#">Series</a></li>
+					<li><a href="#">People</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Wallet</a></li>
+					<li><a href="#">Jobs</a></li>
+					<div class="account-info">
+						<div onclick="displayHiddenAccountInfoHeader()" class="tggl-icon">
+							<img src="./photos/bg.jpg" alt="Profile">
+							<div class="toggle-dropdown">
+								<i class="fa fa-sort-desc" aria-hidden="true"></i>
+							</div>
+						</div>
+						<br><br><br>
+						<div id="hidden-links-header"> 
+							<ul>
+								<li>
+									<i class="fa fa-user" aria-hidden="true"></i>
+									<a href="">My Profile</a></li>
+								<li>
+									<i class="fa fa-tachometer" aria-hidden="true"></i>
+									<a href="">Dashboard</a></li>
+								<li>
+									<i class="fa fa-sign-out" aria-hidden="true"></i>
+									<a href="">Logout</a></li>
+							</ul>
+						</div> 
+						<!-- Function to display hidden links for account -->
+						<script>
+							function displayHiddenAccountInfoHeader(){
+								var i = document.getElementById("hidden-links-header");
+								if(i.style.display === "block"){
+									i.style.display = "none";
+								}else{
+									i.style.display = "block"
+								}
+							}
+						</script>
+					</div>
+				</ul>
+			</div>
+			
+			<div class="toggle-menu">
+				
+				<div class="visible">
+					<i onclick="toggleMenu()" class="fa fa-bars" aria-hidden="true"></i>
+	
+				</div>
+				<div id="toggle">
+					
+					<div class="nav-links">
+						<ul class="left-links">
+							
+							<li>
+								<i  class="fa fa-file-video-o" aria-hidden="true"></i>
+								<a id="link" href="#">Movies</a></li>
+							<li>
+								<i  class="fa fa-video-camera" aria-hidden="true"></i>
+								<a id="link" href="#">Series</a></li>
+							<li>
+								<i class="fa fa-users" aria-hidden="true"></i>
+								<a id="link" href="#">People</a></li>
+							<li>
+								<i class="fa fa-newspaper-o" aria-hidden="true"></i>
+								<a id="link" href="#">News</a></li>
+							<li>
+								<i class="fa fa-money" aria-hidden="true"></i>
+								<a id="link" href="#">Wallet</a></li>
+							<li>
+								<i class="fa fa-briefcase" aria-hidden="true"></i>
+								<a id="link" href="#">Jobs</a></li>
+								<div class="account">
+									<div onclick="displayHiddenAccountInfo()" class="tggl-icon">
+										<img src="./photos/bg.jpg" alt="Profile">
+										<div class="toggle-dropdown">
+											<i class="fa fa-sort-desc" aria-hidden="true"></i>
+										</div>
+									</div>
+									<br><br><br>
+									<div id="hidden-links"> 
+										<ul>
+											<li>
+												<i class="fa fa-user" aria-hidden="true"></i>
+												<a href="">My Profile</a></li>
+											<li>
+												<i class="fa fa-tachometer" aria-hidden="true"></i>
+												<a href="">Dashboard</a></li>
+											<li>
+												<i class="fa fa-sign-out" aria-hidden="true"></i>
+												<a href="">Logout</a></li>
+										</ul>
+									</div> 
+									<!-- Function to display hidden links for account -->
+									<script>
+										function displayHiddenAccountInfo(){
+											var i = document.getElementById("hidden-links");
+											if(i.style.display === "block"){
+												i.style.display = "none";
+											}else{
+												i.style.display = "block"
+											}
+										}
+									</script>
+								</div>
+						</ul>
+						
+					</div>
+				</div>
+			</div>
+				<!-- Function to toggle menu on mobile view -->
+				<script>
+					function toggleMenu(){
+						var i = document.getElementById("toggle");
+						if(i.style.display === "block"){
+							i.style.display = "none"
+						}else{
+							i.style.display = "block"
+					}
+					}
+					
+				</script>
+				<div class="logout-btn">
+					<button type="button">LogOut</button>
+				</div>
+		</div>
+
+		<div class="main">
+			<div class="flyer">
+				<img src="./photos/new.png" alt="">
+				<div class="caption">
+					<h1>WE ARE A REPRESENTATION AGENCY</h1>
+					<br>
+					<p>You don't need a strong connection to a good film practitioner,</p>
+					<p>You only need a good brand representative.</p>
+					
+					<p class="centered">"We are what you need"</p>
+				</div>
+				<div class="spans">
+						<span class="span-1">
+							<h1>MOVIES</h1>
+						</span>
+						<span class="span-2">
+							<h1>SERIES</h1>
+						</span>
+						<span class="span-3">
+							<h1>TALENTS</h1>
+						</span>
+						
+					</div>
+				</div>
+			</div>
+			<br>
+			<!-- About Us Info -->
+			<div class="about-us">
+				<h3>ABOUT US</h3>
+				<p>TAIM AFRICA is a registered non-profit arts-motivation movement in Uganda (East Africa) with a ground mission of discovering, nurturing and platforming teenage amd early-youth creative arts alongside sustaining their academic lives. The movement exixts in youth communities and secondary / high schools as it fetches-out passionate creative drammers in the arts industry and molds them great persons of influence.</p>
+				<p>The organization started in 2018 as aprogram of a copyright protection company AICODE(Alliance of Independent Copyright Defenders) in Uganda where it was a child film acting mentorship initiative. In 2019, the by then program administrators took a step to register the program separate from the company [AICODE] to an independent non-profit organization.</p>
+				<p>Since then, the organization has grown bold and independent with approved registration certificates from the Uganda government.</p>
+
+			</div>
+
+			<div class="lower-section">
+				<div class="objectives">
+					<h4>OBJECTIVES</h4>
+					<ul>
+						<li>To influence policy and practice of film-talent development and management</li>
+						<li>To represent the views of those involved in film industry development</li>
+						<li>To support the film sector in increasing and sustaining participation levels</li>
+						<li>To create a profiting atmosphere for film practitioners</li>
+						<li>To create a joint and cooperative ground for the film industry</li>
+						<li>To facilitate capacity building for nurturing and developing of film talents</li>
+					</ul>
+				</div>
+				<div class="vision">
+					<h4>Vision</h4>
+					<p>To create an evident profiting community for film art.</p>
+					<h4>Mission</h4>
+					<p>To provide the power of film in the positive influence of lives</p>
+					<h4>Core Values</h4>
+					<ol>
+						<li>Motivation</li>
+						<li>Innovation</li>
+						<li>Teamwork</li>
+					</ol>
+				</div>
+			</div>
+
+			<!-- Footer -->
+			<div class="footer">
+				<div class="social-links-footer">
+					<div class="logo">
+						<img src="./photos/logo.png" alt="">
+					</div>
+					<div class="icon">
+						<ul>
+							<li>
+								<a href="">
+									<i class="fa fa-facebook-official" aria-hidden="true"></i>
+								<span>facebook</span>
+								</a>
+								
+							</li>
+							<li>
+								<a href="">
+									<i class="fa fa-twitter" aria-hidden="true"></i>
+								<span>twitter</span>
+								</a>
+								
+							</li>
+							<li>
+								<a href="">
+									<i class="fa fa-linkedin" aria-hidden="true"></i>
+								<span>LinkedIn</span>
+								</a>
+								
+							</li>
+							<li>
+								<a href="">
+									<i class="fa fa-youtube-play" aria-hidden="true"></i>
+									<span>YouTube</span>
+								</a>
+								
+							</li>
+						</ul>
+						
+					</div>
+		
+				</div>
+				<hr>
+				<div class="other-links">
+					<div class="columns">
+						<div class="row1">
+							<div class="col">
+								<h4>THE AGENCY</h4>
+								<ul>
+									<li><a href="">About Us</a></li>
+									<li><a href="">Our Partners</a></li>
+									<li><a href="">Work With Us</a></li>
+									<li><a href="">Our Programs</a></li>
+								</ul>
+				
+							</div>
+							<div class="col">
+								<h4>EXPLORE</h4>
+								<ul>
+									<li><a href="">	Recently Added</a></li>
+									<li><a href="">Trending Series</a></li>
+									<li><a href="">Trending Movies</a></li>
+									<li><a href="">Recommended Films</a></li>
+								</ul>
+				
+							</div>
+						</div>
+			
+						<div class="row1">
+							<div class="col">
+								<h4>GENRES</h4>
+								<ul>
+									<li><a href="">Action</a></li>
+									<li><a href="">Comedy</a></li>
+									<li><a href="">Love</a></li>
+									<li><a href="">Horror</a></li>
+								</ul>
+				
+							</div>
+				
+							<div class="col">
+								<h4>QUICK LINKS</h4>
+								<ul>
+									<li><a href="">My Account</a></li>
+									<li><a href="">FAQ</a></li>
+									<li><a href="">Help Centre</a></li>
+									<li><a href="">Contact Us</a></li>
+								</ul>
+				
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="copyright">
+					<p>Copyright &copy; 2023 TAIM AFRICA [One Film Spot For All]
+						<br>
+						<br>
+						
+					</p>
+					<div class="buttons">
+						<button id="mytogglebtn" >
+							Dark mode
+						</button>
+						 <!-- Function to toggle dark and light modes -->
+						<script>
+		
+							const toggleBtn = document.getElementById('mytogglebtn');
+							const container = document.querySelector('.container');
+							
+							toggleBtn.addEventListener('click', function(){
+								if (mytogglebtn.textContent === 'Light mode') {
+									mytogglebtn.textContent = 'Dark mode';
+								} else {
+									mytogglebtn.textContent = 'Light mode';
+								}
+								container.classList.toggle('dark-mode');
+							});
+						</script>
+						<select name="lang" id="">
+							<option value="">English</option>
+							<option value="">Luganda</option>
+							<option value="">Kiswahili</option>
+							<option value="">Germany</option>
+							<option value="">French</option>
+							<option value="">Arabic</option>
+							<option value="">Chinese</option>
+						</select>
+						
+					</div>
+		
+					
+					
+				</div>
+			</div>
+		</div>
+	
+		
+		
+	</div>
+	
+</body>
+<script src="./Script/contact-us.js"></script>
+</html>

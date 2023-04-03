@@ -1,0 +1,1171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body, html{
+    width: 100%;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+/* Dark mode */
+.dark-mode{
+    transition: 0.5s ease-in-out;
+    background-color: #000000;
+    color: #fff;
+}
+.dark-mode #hidden-links-header{
+    background-color: #000;
+}
+.dark-mode .search i{
+    color: rgb(0, 255, 255);
+}
+.dark-mode body{
+    background-color: black;
+}
+.dark-mode .header{
+    background-color: #000;
+    border-bottom: 2px solid #545454;
+}
+.dark-mode .header .search input,
+.dark-mode .logout-btn button{
+    background: #292828;
+    border: 0px;
+    color: #fff;
+}
+.dark-mode .main {
+    height:47%;
+}
+.dark-mode .main .flyer{
+    border-bottom: 2px solid #545454;
+    height: 100%;
+}
+.dark-mode .main .flyer .caption p{
+    margin-left: 0%;
+}
+.dark-mode .main .flyer .caption{
+    margin-left: 2%;
+}
+.dark-mode .main .flyer .spans span{
+    background: #3c3c3c;
+    color: aqua;
+}
+.dark-mode .main .flyer .spans span h1{
+    color: aqua;
+}
+.dark-mode .lower-section .vision{
+    background: #000;
+}
+.dark-mode .footer{
+    background: #000;
+    color: #fff;
+}
+.dark-mode .footer .other-links .columns .row1 .col h4{
+    color: #fff;
+}
+.dark-mode .header .logo{
+    color: #292828;
+}
+.dark-mode .footer .logo{
+    color: #292828;
+}
+.dark-mode #toggle .nav-links{
+    background: #000;
+}
+.dark-mode .social-links ul li a i{
+    color: #fff;
+}
+.dark-mode a,
+.dark-mode .social-links a{
+    color: rgb(0, 255, 255);
+}
+.dark-mode .footer{
+    border-top: 1px solid #292828;
+}
+.dark-mode .buttons button,.dark-mode select{
+    color: rgb(0, 255, 255);
+    background: #222121;
+}
+
+/* Header */
+.header{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(14, 8, 43);
+    position: fixed;
+    width: 100%;
+    z-index:2;
+}
+
+.logo{
+    width: 15%;
+    height:80%;
+    margin-left: 1%;
+    color: aqua;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 100%;
+}
+
+.search{
+    width: 25%;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+}
+
+.search input{
+    text-align: left;
+    width: 100%;
+    border-radius: 10px;
+    font-size: smaller;
+    height: 35px !important;
+    padding-left: 10px;
+    font-weight: bold;
+    border: 0px;
+    
+}
+
+.search i{
+    margin-left: -7%;
+    color: blue;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.nav-links ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+
+}
+
+.nav-links ul li{
+    text-decoration: none;
+    font-size: large;
+    margin: 2px 5% 2px 4.5%;
+}
+
+.nav-links ul li:hover{
+    opacity: 0.4;
+    transition: ease-in-out 0.4s;
+}
+.nav-links .left-links{
+    width: 50%;
+    height: 90%;
+    margin-left: 2%;
+    margin-top: -30px;
+}
+.nav-links .left-links li{
+    height: 15%;
+}
+.left-links li i{
+    width: 20px;
+}
+.nav-links .left-links li a{
+    margin: 0 0 0 4%;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.logout-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: 1%;
+    width: 10%;
+    
+}
+
+.logout-btn button{
+    display: none;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 7px;
+    padding: 5% 25%;
+    font-weight: bold;
+    color: blue;
+}
+
+.logout-btn button:hover{
+    opacity: 0.4;
+    transition: ease-in-out 0.4s;
+}
+.toggle-menu{
+    display: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.toggle-menu .visible i{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+.toggle-menu .visible i:hover{
+    opacity: 0.4;
+    transition: ease-in-out 0.4s;
+}
+
+.toggle-menu #toggle{
+    display: none;
+    color: #fff;
+}
+.account{
+    display: flex;
+    flex-direction: column;
+    margin-top: -250px;
+    margin-left: auto;
+    right: 2.5%;
+    position: absolute;
+    left: 60%;
+    width: 39%;
+    z-index:1;
+    height: 70%;
+}
+
+.account .tggl-icon{
+    display: flex;
+    height: 25%;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.account img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    float: right;
+    margin-right: 5%;
+    margin-left: auto;
+    z-index: 1;
+}
+
+.account .toggle-dropdown{
+    margin-right: 2%;
+}
+.account-info{
+    display: block;
+    flex-direction: column;
+    margin-top: 37.9px;
+    margin-left: auto;
+    position: absolute;
+    left: 60%;
+    width: 39%;
+    z-index:1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.account-info .tggl-icon{
+    display: flex;
+    height: 25%;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.account-info img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    float: right;
+    margin-right: 5%;
+    margin-left: auto;
+    z-index: 1;
+}
+
+.account-info .toggle-dropdown{
+    margin-right: 2%;
+}
+#hidden-links i{
+    margin-left: 15px;
+    margin-top: 2px;
+}
+#hidden-links{
+    display: none;
+    width: 100%;
+    height: 80%;
+    margin-top: -55px;
+}
+
+/* Account */
+#hidden-links-header i{
+    margin-left: 15px;
+    margin-top: 2px;
+    color: #fff;
+}
+#hidden-links-header{
+    display: none;
+    width: 100%;
+    margin-top: -28px;
+    background-color: rgb(14, 8, 43);
+    
+}
+.account-info #hidden-links-header ul{
+    width: 100%;
+    margin-left: auto;
+    display: block;
+    height: 140px;
+}
+.account-info #hidden-links-header ul li{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 5% 10% 0 auto;
+
+        
+}
+.account-info #hidden-links-header ul li a{
+    font-size: 12px;
+    color: #fff;
+}
+.account-info #hidden-links-header ul li{
+    color: #fff;
+}
+
+.account-info #hidden-links-header ul li{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.account-info .tggl-icon .toggle-dropdown i{
+    color: #fff;
+}
+.account-info #hidden-links-header ul li img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    align-items: center;
+}
+.account-info #hidden-links-header ul li i{
+    color: #fff;
+}
+
+.account #hidden-links ul{
+    width: 100%;
+    margin-left: auto;
+    margin-top: 3%;
+    display: none;
+    
+}
+.account #hidden-links ul li{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 5% 10% 0 auto;
+
+        
+}
+.account #hidden-links ul li a{
+    font-size: 1px;
+    color: #fff;
+}
+
+.account #hidden-links ul li{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.account #hidden-links ul li img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    align-items: center;
+}
+
+
+
+/* Main Content */
+.main{
+    height: 55%;
+    
+}
+.main .flyer{
+    width: 100%;
+    display: flex;
+    height: 100%;
+}
+.main .flyer img{
+    margin-top: 4%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    height: 50%;
+}
+.main .flyer .caption{
+    margin: 0 0 0 5%;
+    z-index: 1;
+    color: #fff;
+    width: 56%;
+}
+.main .flyer .caption h1{
+    margin-top: 15%;
+    font-size: 35px;
+}
+.main .flyer .caption p{
+    margin-left: 10%;
+    font-size: 25px;
+}
+.main .flyer .caption .centered{
+    margin-left: 30%;
+    margin-top: 4%;
+}
+.main .flyer .spans{
+    width: 40%;
+    margin:8% 0 0 0;
+    height: 59%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    transform: skewX(-25deg);
+}
+.main .flyer .spans span{
+    width: 60%;
+    height: 30%;
+    background-color: #0c0b5c;
+    margin-bottom: 3%;
+    border-top: 5px solid #fff;
+    border-left: 2px solid #ffff;
+    display: flex;
+    align-items: center;
+
+}
+.main .flyer .spans span h1{
+    color: #fff;
+    margin-left: 25%; 
+}
+.main .flyer .spans .span-1{
+    margin-left: 25%;
+}
+.main .flyer .spans .span-2{
+    margin-left: 13%;
+}
+.about-us{
+    margin: 3% 2% 2% 2%;
+}
+.about-us h3{
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.about-us p{
+    margin: 2% 0 0 0;
+    
+}
+.lower-section{
+    margin: 2% 2% 0 2%;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 4%;
+    padding-bottom: 2%;
+    
+}
+.lower-section .objectives h4{
+    text-decoration: underline;
+    margin-bottom: 2%;
+    text-align: center;
+    font-weight: bolder;
+}
+.lower-section .objectives ul{
+    margin: 0 0 0 3%;
+}
+.lower-section .objectives ul li{
+    margin-bottom: 2%;
+}
+.lower-section .vision{
+    margin-left: auto;
+    border: 2px solid #454343;
+    border-radius: 3px;
+    padding: 2%;
+    background: #fcf9f9;
+}
+.lower-section .vision h4{
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 0 0 1% 0;
+}
+.lower-section .vision p{
+    margin: 0 0 2% 0;
+}
+.lower-section .vision ol{
+    margin: 1% 0 0 3%;
+}
+
+
+/* Footer */
+.footer{
+    background-color: #0c0b5c;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.social-links-footer{
+    height: 60px;
+    width: 99.5%;
+    display: flex;
+    align-items: center;
+    border-top: 2px solid #fff;
+}
+.social-links-footer .logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 10%;
+    margin-right: auto;
+}
+.social-links-footer .logo img{
+    width: 100%;
+}
+.icon{
+    display: flex;
+    width: 55% ;
+    margin-left: auto;
+    margin-right: 2%;
+}
+.icon ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: auto;
+}
+.icon ul li{
+    list-style: none;
+    width: 25%;
+    text-align: right;
+}
+
+.icon ul li a span{
+    margin-left: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: right;
+}
+
+.icon ul li a{
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    float: right;
+    
+}
+.icon ul li i{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    color: #fff;
+}
+
+.other-links{
+    width: 100%;
+}
+.row1{
+    width: 45%;
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    margin: 0 2%;
+}
+.col{
+    flex: 50%;
+    
+}
+.col h4{
+    margin-top: 20px;
+    margin-bottom: 4px;
+    color: aqua;
+    
+}
+.col ul{
+    margin-left: 0%;
+}
+.col ul li{
+    list-style: none;
+}
+
+.col ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: ease-in 0.3s;
+}
+.col ul li a:hover{
+    opacity: 0.7;
+}
+
+
+.copyright{
+    color: #fff;
+}
+
+.copyright p{
+    font-size: small;
+    text-align: center;
+    margin: 30px 1% 30px 0%;
+}
+.copyright button, select{
+    cursor: pointer;
+    border-radius: 7px;
+    padding: 3% 1% ;
+    font-weight: bold;
+    color: blue;
+    margin: 0 5%;
+    width: 130px;
+}
+.copyright button:hover, select:hover{
+    color: #fff;
+    background-color: #454343;
+    transition: ease 0.4s;
+    
+}
+.copyright .buttons{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: -30px;
+    
+}
+
+
+
+/* Media Queries for Responsiveness*/
+@media screen and(max-width: 1330px){
+    .nav-links ul li{
+        font-size: 17px;
+    }
+    .icon ul li i{
+        font-size: 20px;
+        display: flex;
+        
+    }
+    .main .flyer .caption .centered{
+        margin-top: 10%;
+        border: 1px solid;
+    }
+    .icon ul{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+    .icon ul li span{
+        font-size: 12px;
+    }
+    .row1{
+        width: 45%;
+    }
+}
+@media screen and(max-width: 1312px){
+    .header{
+        background-color: #fff;
+    }
+}
+/* Media Query : Nest Hub Max */
+@media screen and (max-width: 1280px){
+    .header .search input{
+        font-size: smaller;
+    }
+    .header .nav-links ul li{
+        font-size: 16px;
+    }
+    .main .flyer .caption .centered{
+        margin-top: 5%;
+    }
+    .main .flyer .caption h1{
+        font-size: 30px;
+    }
+    .main .flyer .spans{
+        height: 50%;
+    }
+    
+}
+
+/* Media Query : Nest Hub */
+@media screen and   (max-width: 1024px){
+    .header .search input{
+        font-size: 10px;
+    }
+    .header .search i{
+        margin-left: -10%;
+    }
+    .header .nav-links ul li{
+        margin: 2px 3.5% 2px 4%;
+        font-size: 16px;
+    }
+    .main .flyer .caption .centered{
+        margin-top: 5%;
+    }
+    .main .flyer img{
+        height: 45%;
+        width: 103%;
+    }
+    .main .flyer .caption h1{
+        font-size: 27px;
+    }
+    .main .flyer .caption p{
+        font-size: large;
+    }
+    .main .flyer .spans{
+        height: 55%;
+    }
+}
+
+/* Media Query : Surface Pro 7 */
+@media screen and (max-width: 912px){
+    .header .search{
+        width: 28%;
+    }
+    .header .nav-links ul li{
+        margin: 2px 3% 2px 3.5%;
+        font-size: 15px;
+    }
+    
+    .social-links ul li{
+        margin: 14% 0;
+    }
+    .row1{
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+        color: #fff;
+        margin: 0 2%;
+    }
+    .main .flyer .caption .centered{
+        margin-top: 5%;
+    }
+    .main .flyer img{
+        width: 103%;
+    }
+    .main .flyer .caption h1{
+        font-size: 25px;
+    }
+    .main .flyer .spans{
+        height: 56%;
+    }
+    .main .flyer .spans span h1{
+        font-size: 20px;
+    }
+
+}
+
+/* Media Query :  iPad Air */
+@media screen and (max-width: 820px){
+    .header .search{
+        width: 28%;
+    }
+    .header .search input{
+        font-size: 9px;
+    }
+    .header .nav-links ul li{
+        margin: 2px 2.8% 2px 2.3%;
+        font-size: 15px;
+    }
+    .rows .row a h1{
+        font-size: 17.3px;
+    }
+    .rows .row a button{
+        font-size: xx-small;
+    }
+    .main .flyer img{
+        width: 105%;
+    }
+    .main .flyer .caption h1{
+        font-size: 20px;
+        margin-top: 20%;
+    }
+    .main .flyer .caption p{
+        font-size: 16px;
+    }
+
+}
+
+/* Media Query iPad Mini */
+@media screen and (max-width: 768px){
+    .header .search{
+        width: 28%;
+    }
+    .header .search input{
+        font-size: 8.5px;
+    }
+    .header .nav-links ul li{
+        margin: 2px 2.8% 2px 2.3%;
+        font-size: 14px;
+    }
+    .rows .row a h1{
+        font-size: 14.3px;
+    }
+    .rows .row a button{
+        font-size: xx-small;
+    }
+    .main{
+        padding-top: 3.5%;
+    }
+    .main .flyer img{
+        width: 100%;
+    }
+    .main .flyer .caption p{
+        font-size: 16px;
+    }
+    .main .flyer .spans{
+        margin-left: 1%;
+        width: 30%;
+    }
+    .main .flyer .spans span{
+        width: 80%;
+    }
+}
+
+/* This   is   where the mobile view starts */
+@media screen and (max-width: 720px){
+    .header{
+        width: 100%;
+        background: #000;
+    }
+    .logo{
+        width: 20%;
+        display: flex;
+        align-items: center;
+    }
+    .header .search{
+        width: 70%;
+        margin-left: 10%;
+
+        
+    }
+    .search input{
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        height: 40px;
+        padding-left: 5px;
+        width: 100%;
+    }
+    .toggle-menu{
+        display: flex;
+        margin-right: -8%;
+    }
+    .visible{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: auto;
+        margin-right: -1%;
+        width: 20%;
+        
+    }
+    
+    .visible i{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        border: 1px solid;
+        padding: 7px;
+    }
+    .hide{
+        visibility: hidden;
+        display: none;
+    }
+    
+    #toggle .nav-links{
+        display: flex;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 50px;
+        width: 100%;
+        height: 300px;
+        background-color: rgb(14, 8, 43);
+        z-index: 1;
+    }
+
+    #toggle .nav-links ul{
+        display: block;
+    }
+    #toggle .nav-links ul li a{
+        font-size: 13px;
+    }
+    #toggle .nav-links ul li:hover{
+        opacity: 0.5;
+        transition: ease-in 0.2s; 
+    }
+    
+    .nav-links ul li{
+        display: flex;
+        align-items: center;
+        height: 30px;
+    }
+    .logout-btn button{
+        display: none;
+        float: right;
+        padding-left: 1%;
+        padding-right: 1%;
+        margin-top: 11px;
+    }
+    .toggle-menu{
+        display: flex;
+        width: 10%;
+    }
+    /* Flyer */
+    .main{
+        height: 45%;
+    }
+    .main .flyer{
+        display: block;
+        text-align: center;
+        background-color: #222121;
+        width: 100%;
+        padding-top: 1%;
+        height: 100%;
+    }
+    .main .flyer .spans{
+        width: 40%;
+        margin: 20em 0 0 0;
+        height: 100px;
+        transform: skewX(0deg);
+    }
+    .main .flyer .caption{
+        width: 90%;
+        text-align: center;
+        margin-top: 8%;
+    }
+    .main .flyer .caption h1{
+        font-size: 30px;
+        margin-top: 2%;
+    }
+    .main .flyer .caption p,
+    .main .flyer .caption .centered{
+        margin: 0 0 2% 0;
+    }
+    .main .flyer .spans{
+        width: 96%;
+        margin: 4% 2%;
+        height: 50px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .main .flyer img{
+        height: 300px;
+        display: none;
+    }
+    
+    .main .flyer .spans span{
+        height: 40px;
+        width: 30%;
+        border-top: 0px;
+        border-right: 2px solid #fff;
+        
+    }
+    .main .flyer .spans .span-1,
+    .main .flyer .spans .span-2{
+        margin-left: 0;
+    }
+    .main .flyer .spans span h1{
+        width: 100%;
+        font-size: 20px;
+        margin: 0;
+    }
+    /* Lower section */
+    .lower-section{
+        display: block;
+        margin-top: 5%;
+    }
+    .lower-section .vision{
+        margin-top: 3%;
+    }
+
+   
+    .social-links-footer .logo{
+        width: 30%;
+    }
+   
+    .icon a i{
+        font-size: 15px;
+    }
+    .icon ul li a span{
+        display: none;
+    }
+    
+    .col h4{
+        font-size: smaller;
+    }
+    .col ul li a{
+        font-size: smaller;
+    }
+}
+/* Media Query : Surface Duo */
+@media screen and (max-width: 540px){
+    .header{
+        width: 100%;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+    .header .search{
+        margin-left: 5%;
+    }
+    .header .search input{
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+    }
+    .row1{
+        width: 45%;
+    } 
+    .main .flyer .caption{
+        margin-top: 15%;
+    }
+    .main .flyer .caption h1{
+        font-size: 23px;
+    }
+    
+}
+
+/* Media Query : iPhone XR(414) and Samsung Galaxy A51/71*/
+@media screen and (max-width: 414px){
+    .header .search{
+        margin-left: 5%;
+    }
+    .header .search input{
+        font-size: 10px;
+    }
+    .search i{
+        margin-left: -15%;
+        font-size: large;
+    }
+    .visible{
+        margin-right: 15%;
+        
+    }
+    .show-border .card a img{
+        height: 100%;
+    }
+    .social-links ul li{
+        margin-top: 5px;
+    }
+    /* Other-links */
+    .row1{
+        width: 128%;
+    }
+    .footer .other-links .row1{
+        width: 110%;
+    }
+    .main .flyer .caption h1{
+        font-size: 22px;
+    }
+}
+
+/* Media Query : Pixel 5 and iPhone 12 Pro*/
+@media screen and (max-width: 393px){
+    .search input{
+        font-size: 10px;
+    }
+    .visible{
+        margin-right: 22%;
+        width: 20%;
+        
+    }
+}
+
+/* Media Query : iPhone SE */
+@media screen and (max-width: 375px){
+
+    .header .search input{
+        font-size: 9px;
+    }
+    .header .search i{
+        font-size: large;
+        margin-left: -12%;
+    }
+    .footer .other-links .row1{
+        width: 110%;
+    }
+
+}
+/* Media Query : Samsung Galaxy S8*/
+@media screen and (max-width: 360px){
+    .header .search{
+        margin-left: 2%;
+    }
+    .search input{
+        font-size: 9px;
+    }
+    .search i{
+        margin-left: -10%;
+        font-size: small;
+    }
+    .visible{
+        margin-right: 22%;
+        width: 15%;
+        
+    }
+    .main .flyer .caption{
+        margin-top: 17%;
+    }
+    .main .flyer .spans span h1{
+        font-size: 15px;
+    }
+
+    
+}
+
+/* Media Query : Galaxy Fold*/
+@media screen and (max-width: 280px){
+    .header .search{
+        margin-left: 2%;
+    }
+    .header .search input{
+        font-size: 7px;
+    }
+    .search i{
+        margin-left: -10%;
+        font-size: small;
+    }
+    .visible{
+        margin-right: 25%;
+        width: 20%;
+        
+    }
+    #hidden-links ul li {
+        width: 110px;
+    }
+    .main .flyer .caption{
+        margin-top: 22%;
+    }
+    .main .flyer .caption h1{
+        font-size: 17px;
+    }
+    /* Other-links */
+    .row1{
+        width: 100%;
+    }
+    .footer{
+    }
+    .footer .other-links .row1{
+        width: 95%;
+    }
+    .copyright p{
+        font-size: x-small;
+    }
+    
+}

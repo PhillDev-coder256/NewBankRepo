@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TAIM AFRICA</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./media-queries/w-1280.css">
+	<script src="https://kit.fontawesome.com/ecf5c1768c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+
+	<!-- Header -->
+	<div class="header">
+		<div class="logo">
+			<!-- <img src="./photos/WhatsApp Image 2023-02-28 at 3.54.10 PM.jpeg" alt="TAIM AFRICA LOGO"> -->
+		</div>
+		<div class="search">
+			<input type="search" value="" placeholder="Search for Movies, TV Shows, and People ">
+			<i class="fa fa-search" aria-hidden="true"></i>
+			
+		</div>
+		<div class="nav-links hide">
+			<ul>
+				<li>
+					
+				<a href="#">Movies</a></li>
+				<li><a href="#">Series</a></li>
+				<li><a href="#">People</a></li>
+				<li><a href="#">News</a></li>
+				<li><a href="#">Wallet</a></li>
+				<li><a href="#">Jobs</a></li>
+				<div class="account-info">
+					<div onclick="displayHiddenAccountInfoHeader()" class="tggl-icon">
+						<img src="./photos/bg.jpg" alt="Profile">
+						<div class="toggle-dropdown">
+							<i class="fa fa-sort-desc" aria-hidden="true"></i>
+						</div>
+					</div>
+					<br><br><br>
+					<div id="hidden-links-header"> 
+						<ul>
+							<li>
+								<i class="fa fa-user" aria-hidden="true"></i>
+								<a href="">My Profile</a></li>
+							<li>
+								<i class="fa fa-tachometer" aria-hidden="true"></i>
+								<a href="">Dashboard</a></li>
+							<li>
+								<i class="fa fa-sign-out" aria-hidden="true"></i>
+								<a href="">Logout</a></li>
+						</ul>
+					</div> 
+					<!-- Function to display hidden links for account -->
+					<script>
+						function displayHiddenAccountInfoHeader(){
+							var i = document.getElementById("hidden-links-header");
+							if(i.style.display === "block"){
+								i.style.display = "none";
+							}else{
+								i.style.display = "block"
+							}
+						}
+					</script>
+				</div>
+			</ul>
+		</div>
+		
+		<div class="toggle-menu">
+			
+			<div class="visible">
+				<i onclick="toggleMenu()" class="fa fa-bars" aria-hidden="true"></i>
+
+			</div>
+			<div id="toggle">
+				
+				<div class="nav-links">
+					<ul class="left-links">
+						
+						<li>
+							<i  class="fa fa-file-video-o" aria-hidden="true"></i>
+							<a id="link" href="#">Movies</a></li>
+						<li>
+							<i  class="fa fa-video-camera" aria-hidden="true"></i>
+							<a id="link" href="#">Series</a></li>
+						<li>
+							<i class="fa fa-users" aria-hidden="true"></i>
+							<a id="link" href="#">People</a></li>
+						<li>
+							<i class="fa fa-newspaper-o" aria-hidden="true"></i>
+							<a id="link" href="#">News</a></li>
+						<li>
+							<i class="fa fa-money" aria-hidden="true"></i>
+							<a id="link" href="#">Wallet</a></li>
+						<li>
+							<i class="fa fa-briefcase" aria-hidden="true"></i>
+							<a id="link" href="#">Jobs</a></li>
+							<div class="account">
+								<div onclick="displayHiddenAccountInfo()" class="tggl-icon">
+									<img src="./photos/bg.jpg" alt="Profile">
+									<div class="toggle-dropdown">
+										<i class="fa fa-sort-desc" aria-hidden="true"></i>
+									</div>
+								</div>
+								<br><br><br>
+								<div id="hidden-links"> 
+									<ul>
+										<li>
+											<i class="fa fa-user" aria-hidden="true"></i>
+											<a href="">My Profile</a></li>
+										<li>
+											<i class="fa fa-tachometer" aria-hidden="true"></i>
+											<a href="">Dashboard</a></li>
+										<li>
+											<i class="fa fa-sign-out" aria-hidden="true"></i>
+											<a href="">Logout</a></li>
+									</ul>
+								</div> 
+								<!-- Function to display hidden links for account -->
+								<script>
+									function displayHiddenAccountInfo(){
+										var i = document.getElementById("hidden-links");
+										if(i.style.display === "block"){
+											i.style.display = "none";
+										}else{
+											i.style.display = "block"
+										}
+									}
+								</script>
+							</div>
+					</ul>
+					
+				</div>
+			</div>
+		</div>
+			<!-- Function to toggle menu on mobile view -->
+			<script>
+				function toggleMenu(){
+					var i = document.getElementById("toggle");
+					if(i.style.display === "block"){
+						i.style.display = "none"
+					}else{
+						i.style.display = "block"
+				}
+				}
+				
+			</script>
+			<div class="logout-btn">
+				<button type="button">LogOut</button>
+			</div>
+	</div>
+
+	<div class="main-content">
+		<div class="about">
+			<div class="text">
+				<h1>REPRESENTING FILM PRACTITIONERS <br> AND THEIR CRAFT <br> <span>
+					FILM AS A BUSINESS
+				</span></h1>
+				
+				<h2>ENSURING A PROFITING ATMOSPHERE FOR THE FILM INDUSTRY</h2>
+			</div>
+			
+			<img src="./photos/harry-potter-no-bg.png" alt="image" >
+		</div>
+
+		<div class="main">
+			<div class="left-column">
+			
+				<div class="movies">
+					<div class="title">
+						<p>MOVIES</p>
+					</div>
+					
+					
+					<div class="movies-container">
+						<div class="span">
+							<a  href="#">
+								<div class="pic">
+									<img src="./photos/OIP (1).jpg" alt="">
+								</div>
+								<div class="caption">
+									<p>THE LAST OF US</p>
+								</div>
+								<div class="rate">
+									<p>PG 13</p>
+									<span >
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+									</span>
+									
+								</div>
+							</a>
+							
+							
+						</div>
+		
+		
+						<div class="span">
+							
+							<a href="">
+								<div class="pic">
+									<img src="./photos/thesnare.jpg" alt="">
+								</div>
+								<div class="caption">
+									<p>THE SNARE</p>
+								</div>
+								<div class="rate">
+									<p>PG 12</p>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+									</span>
+									
+								</div>
+		
+							</a>
+						</div>
+		
+		
+						<div class="span hidden">
+							<a href="#">
+								<div class="pic">
+									<img src="./photos/harrypotter.jpg" alt="">
+								</div>
+								<div class="caption">
+									<p>HARRY POTTER</p>
+								</div>
+								<div class="rate">
+									<p>PG 10</p>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+									</span>
+									
+								</div>
+							</a>
+							
+						</div>
+					</div>
+					
+				</div>
+				<div id="series" class="movies">
+					<div class="title">
+						<p>SERIES</p>
+					</div>
+					<div class="movies-container">
+						<div class="span">
+							<a  href="#">
+								<div class="pic">
+									<img src="./photos/OIP (1).jpg" alt="">
+								</div>
+								<div class="caption">
+									<p>THE LAST OF US</p>
+								</div>
+								<div class="rate">
+									<p>PG 13</p>
+									<span >
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+									</span>
+									
+								</div>
+							</a>
+							
+							
+						</div>
+		
+		
+						<div class="span">
+							
+							<a href="">
+								<div class="pic">
+									<img src="./photos/thesnare.jpg" alt="">
+								</div>
+								<div class="caption">
+									<p>THE SNARE</p>
+								</div>
+								<div class="rate">
+									<p>PG 12</p>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+									</span>
+									
+								</div>
+		
+							</a>
+						</div>
+		
+		
+						<div class="span hidden">
+							<a href="#">
+								<div class="pic">
+									<img src="./photos/harrypotter.jpg" alt="">
+								</div>
+								<div class="caption">
+									<p>HARRY POTTER</p>
+								</div>
+								<div class="rate">
+									<p>PG 10</p>
+									<span>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+									</span>
+									
+								</div>
+							</a>
+							
+						</div>
+					</div>
+	
+					
+					
+				</div>
+				<div class="faqs">
+					<div class="title">
+						<p >FAQs</p>
+						<br>
+					</div>
+					<div class="faqs-row">
+						<p onclick="displayHideInfo1()"><span>Is this platform free ?</span>
+							<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+						</p>
+							<div id="content1">
+								This is a sample paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce convallis orci vitae nisi posuere luctus. Integer aliquam, augue vel blandit tempor, tellus mauris euismod ipsum, vitae maximus lorem sapien id ex. Proin rutrum purus enim, in ullamcorper sapien lobortis sed. Nulla facilisi. Sed quis nulla eget eros feugiat maximus. Aliquam erat volutpat. Vivamus vel augue eget sapien laoreet blandit. Donec suscipit malesuada ipsum, vitae sagittis dui aliquet in. Sed eget augue ante. In ac mi vel ex malesuada vestibulum a ac sapien.
+							</div>
+							
+						<P  onclick="displayHideInfo2()" ><span>What is the mission of this platform ?</span>
+							<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+	
+						</P>
+							<div id="content2">
+								This is a sample paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce convallis orci vitae nisi posuere luctus. Integer aliquam, augue vel blandit tempor, tellus mauris euismod ipsum, vitae maximus lorem sapien id ex. Proin rutrum purus enim, in ullamcorper sapien lobortis sed. Nulla facilisi. Sed quis nulla eget eros feugiat maximus. Aliquam erat volutpat. Vivamus vel augue eget sapien laoreet blandit. Donec suscipit malesuada ipsum, vitae sagittis dui aliquet in. Sed eget augue ante. In ac mi vel ex malesuada vestibulum a ac sapien.
+							</div>
+						<p onclick="displayHideInfo3()"><span>Are class certificates from this platform equivalent to college ?</span>
+							<i  class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+						</p>
+							<div id="content3">
+								This is a sample paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce convallis orci vitae nisi posuere luctus. Integer aliquam, augue vel blandit tempor, tellus mauris euismod ipsum, vitae maximus lorem sapien id ex. Proin rutrum purus enim, in ullamcorper sapien lobortis sed. Nulla facilisi. Sed quis nulla eget eros feugiat maximus. Aliquam erat volutpat. Vivamus vel augue eget sapien laoreet blandit. Donec suscipit malesuada ipsum, vitae sagittis dui aliquet in. Sed eget augue ante. In ac mi vel ex malesuada vestibulum a ac sapien.
+							</div>
+						<p onclick="displayHideInfo4()"><span>How to upload my movies, series, and company information ?</span>
+							<i  class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+						</p>
+							<div id="content4">
+								This is a sample paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce convallis orci vitae nisi posuere luctus. Integer aliquam, augue vel blandit tempor, tellus mauris euismod ipsum, vitae maximus lorem sapien id ex. Proin rutrum purus enim, in ullamcorper sapien lobortis sed. Nulla facilisi. Sed quis nulla eget eros feugiat maximus. Aliquam erat volutpat. Vivamus vel augue eget sapien laoreet blandit. Donec suscipit malesuada ipsum, vitae sagittis dui aliquet in. Sed eget augue ante. In ac mi vel ex malesuada vestibulum a ac sapien.
+							</div>
+	
+						<p onclick="displayHideInfo5()"><span>How to publish a job on this platform ?</span>
+							<i  class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+						</p>
+							<div id="content5">
+								This is a sample paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce convallis orci vitae nisi posuere luctus. Integer aliquam, augue vel blandit tempor, tellus mauris euismod ipsum, vitae maximus lorem sapien id ex. Proin rutrum purus enim, in ullamcorper sapien lobortis sed. Nulla facilisi. Sed quis nulla eget eros feugiat maximus. Aliquam erat volutpat. Vivamus vel augue eget sapien laoreet blandit. Donec suscipit malesuada ipsum, vitae sagittis dui aliquet in. Sed eget augue ante. In ac mi vel ex malesuada vestibulum a ac sapien.
+							</div>
+						<p onclick="displayHideInfo6()"><span>How to get a tutor account ?</span>
+							<i  class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+						</p>
+							<div id="content6">
+								This is a sample paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce convallis orci vitae nisi posuere luctus. Integer aliquam, augue vel blandit tempor, tellus mauris euismod ipsum, vitae maximus lorem sapien id ex. Proin rutrum purus enim, in ullamcorper sapien lobortis sed. Nulla facilisi. Sed quis nulla eget eros feugiat maximus. Aliquam erat volutpat. Vivamus vel augue eget sapien laoreet blandit. Donec suscipit malesuada ipsum, vitae sagittis dui aliquet in. Sed eget augue ante. In ac mi vel ex malesuada vestibulum a ac sapien.
+							</div>
+						<p onclick="displayHideInfo7()"><span>How to add a filmography profile ?</span>
+							<i  class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+						</p>
+							<div id="content7">
+								This is a sample paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce convallis orci vitae nisi posuere luctus. Integer aliquam, augue vel blandit tempor, tellus mauris euismod ipsum, vitae maximus lorem sapien id ex. Proin rutrum purus enim, in ullamcorper sapien lobortis sed. Nulla facilisi. Sed quis nulla eget eros feugiat maximus. Aliquam erat volutpat. Vivamus vel augue eget sapien laoreet blandit. Donec suscipit malesuada ipsum, vitae sagittis dui aliquet in. Sed eget augue ante. In ac mi vel ex malesuada vestibulum a ac sapien.
+							</div>
+							<!-- Functions to display faqs questions answers -->
+						<script>
+							function displayHideInfo1(){
+								var x = document.getElementById("content1");
+								if(x.style.display === "block"){
+									x.style.display = "none";
+								}else{
+									x.style.display = "block";
+								}
+							}
+							function displayHideInfo2(){
+								var x = document.getElementById("content2");
+								if(x.style.display === "block"){
+									x.style.display = "none";
+								}else{
+									x.style.display = "block";
+								}
+							}
+							function displayHideInfo3(){
+								var x = document.getElementById("content3");
+								if(x.style.display === "block"){
+									x.style.display = "none";
+								}else{
+									x.style.display = "block";
+								}
+							}
+							function displayHideInfo4(){
+								var x = document.getElementById("content4");
+								if(x.style.display === "block"){
+									x.style.display = "none";
+								}else{
+									x.style.display = "block";
+								}
+							}
+							function displayHideInfo5(){
+								var x = document.getElementById("content5");
+								if(x.style.display === "block"){
+									x.style.display = "none";
+								}else{
+									x.style.display = "block";
+								}
+							}
+							function displayHideInfo6(){
+								var x = document.getElementById("content6");
+								if(x.style.display === "block"){
+									x.style.display = "none";
+								}else{
+									x.style.display = "block";
+								}
+							}
+							function displayHideInfo7(){
+								var x = document.getElementById("content7");
+								if(x.style.display === "block"){
+									x.style.display = "none";
+								}else{
+									x.style.display = "block";
+								}
+							}
+						</script>
+					</div>
+				</div>
+	
+					<br>
+				
+			</div>
+			<div class="right-column hidden">
+				<div class="top-stories">
+					<div class="title">
+						<p>TOP STORIES</p>
+					</div>
+					<div class="rows">
+						<div class="row">
+							<a href="">
+								<img src="./photos/squid-game.jpg" alt="">
+								<h1>SQUID GAME BACK IN CINEMA</h1>
+								<hr>
+								<p>Netflix confirms the viral rumors about  the return of the famour game show this November...</p>
+								<button type="button">READ MORE</button>
+							</a>
+							
+						</div>
+						<div class="row">
+							<a href="">
+								<img src="./photos/squid-game.jpg" alt="">
+								<h1>SQUID GAME BACK IN CINEMA</h1>
+								<hr>
+								<p>Netflix confirms the viral rumors about  the return of the famour game show this November...</p>
+								<button type="button">READ MORE</button>
+							</a>
+							
+						</div>
+					</div>
+					
+				</div>
+				<div class="upcoming-events" >
+					<div class="title">
+						<p>UPCOMING EVENTS</p>
+					</div>
+					<div class="events-row">
+						<div class="events-column">
+							<a href="">
+								<img src="./photos/movie-event-1.jpg" alt="">
+								<h3>VEMA FILM FESTIVAL</h3>
+								<p>21<sup>st</sup> July 2023 <span >DENMARK</span></p>
+							</a>
+							
+							
+						</div>
+						<div class="events-column">
+							<a href="">
+								<img src="./photos/movie-event-2.jpg" alt="">
+								<h3>VEMA FILM FESTIVAL</h3>
+								<p>21<sup>st</sup> July 2023 <span >DENMARK</span></p>
+							</a>
+							
+							
+						</div>
+	
+						
+					</div>
+					
+					<div class="advert">
+						<hr>
+						<h1>ADVERT</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+<br>
+
+	<div class="footer">
+		<div class="social-links">
+			<div class="logo">
+
+			</div>
+			<div class="icon">
+				<ul>
+					<li>
+						<a href="">
+							<i class="fa fa-facebook-official" aria-hidden="true"></i>
+						<span>facebook</span>
+						</a>
+						
+					</li>
+					<li>
+						<a href="">
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+						<span>twitter</span>
+						</a>
+						
+					</li>
+					<li>
+						<a href="">
+							<i class="fa fa-linkedin" aria-hidden="true"></i>
+						<span>LinkedIn</span>
+						</a>
+						
+					</li>
+					<li>
+						<a href="">
+							<i class="fa fa-youtube-play" aria-hidden="true"></i>
+							<span>YouTube</span>
+						</a>
+						
+					</li>
+				</ul>
+				
+			</div>
+
+		</div>
+		<hr>
+		<div class="other-links">
+			<div class="columns">
+				<div class="row1">
+					<div class="col">
+						<h4>THE AGENCY</h4>
+						<ul>
+							<li><a href="../AboutUS/index-about.html">About Us</a></li>
+							<li><a href="">Our Partners</a></li>
+							<li><a href="">Work With Us</a></li>
+							<li><a href="">Our Programs</a></li>
+						</ul>
+		
+					</div>
+					<div class="col">
+						<h4>EXPLORE</h4>
+						<ul>
+							<li><a href="">	Recently Added</a></li>
+							<li><a href="">Trending Series</a></li>
+							<li><a href="">Trending Movies</a></li>
+							<li><a href="">Recommended Films</a></li>
+						</ul>
+		
+					</div>
+				</div>
+	
+				<div class="row1">
+					<div class="col">
+						<h4>GENRES</h4>
+						<ul>
+							<li><a href="">Action</a></li>
+							<li><a href="">Comedy</a></li>
+							<li><a href="">Love</a></li>
+							<li><a href="">Horror</a></li>
+						</ul>
+		
+					</div>
+		
+					<div class="col">
+						<h4>QUICK LINKS</h4>
+						<ul>
+							<li><a href="">My Account</a></li>
+							<li><a href="">FAQ</a></li>
+							<li><a href="">Help Centre</a></li>
+							<li><a href="../ContactUs-TaimAfrica/index-contact.html">Contact Us</a></li>
+						</ul>
+		
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<p>Copyright &copy; 2023 TAIM AFRICA [One Film Spot For All]
+				<br>
+				<br>
+				
+			</p>
+			<div class="buttons">
+				<button id="mytogglebtn" >
+					Dark mode
+				</button>
+				<!-- Function to toggle dark and light modes -->
+				<script>
+
+					const toggleBtn = document.getElementById('mytogglebtn');
+					const container = document.querySelector('.container');
+					
+					toggleBtn.addEventListener('click', function(){
+						if (mytogglebtn.textContent === 'Light mode') {
+							mytogglebtn.textContent = 'Dark mode';
+						} else {
+							mytogglebtn.textContent = 'Light mode';
+						}
+						container.classList.toggle('dark-mode');
+					});
+				</script>
+				<select name="lang" id="">
+					<option value="">English</option>
+					<option value="">Luganda</option>
+					<option value="">Kiswahili</option>
+					<option value="">Germany</option>
+					<option value="">French</option>
+					<option value="">Arabic</option>
+					<option value="">Chinese</option>
+				</select>
+				
+			</div>
+
+			
+			
+		</div>
+	</div>
+	
+</div>
+</body>
+</html>
