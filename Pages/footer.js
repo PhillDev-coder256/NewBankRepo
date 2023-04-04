@@ -2,11 +2,11 @@
 const templateFooter = document.createElement('templateFooter');
 
 templateFooter.innerHTML = `
-<br><br>
+
 <div class="footer">
 		<div class="social-links">
 			<div class="logo" style="border: none; height: 80%;">
-				<img  class="logo-img2" src="logo3.png" alt="logo">
+				<img  class="logo-img2" src="../photos/logo3.png" alt="logo">
 
 			</div>
 			<div class="icon">

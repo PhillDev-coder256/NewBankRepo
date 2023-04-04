@@ -553,6 +553,7 @@ form .input {
   text-align: center;
   padding: 2% 5%;
   border-radius: 3px;
+  font-size: 12px;
 }
 .copyright .buttons .left span:hover {
   opacity: 0.7;

@@ -652,7 +652,6 @@ form .p-1 {
   width: 100%;
   /* margin-top: -1%; */
   padding-bottom: 20px;
-  margin-top: 40px;
 }
 .social-links-footer {
   height: 60px;
@@ -797,9 +796,6 @@ form .p-1 {
     /* height: 380px; */
     padding: 3% 5% 0% 5%;
   }
-  .footer {
-    margin-top: 40px;
-  }
 }
 
 /* Media Query : Nest Hub */
@@ -819,9 +815,6 @@ form .p-1 {
   }
   .other-links ul li a {
     font-size: 17px;
-  }
-  .footer {
-    margin-top: 30px;
   }
 }
 

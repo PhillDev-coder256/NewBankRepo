@@ -2,7 +2,7 @@
 const templateFooter = document.createElement('templateFooter');
 
 templateFooter.innerHTML = `
-<br> <br>
+
 <div class="footer">
 		<div class="social-links">
 			<div class="logo" style="border: none; height: 80%;">

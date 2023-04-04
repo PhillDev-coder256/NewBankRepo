@@ -7,7 +7,7 @@ template.innerHTML = `
             <div class="nav-left">
 
                 <div class="logo">
-                        <img class="logo-img" src="./photos/logo3.png" alt="logo">
+                        <img class="logo-img" src="../photos/logo3.png" alt="logo">
                     </div>
         
                     <div class="search">

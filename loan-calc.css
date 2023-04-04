@@ -643,7 +643,6 @@ td input::placeholder {
   width: 100%;
   /* margin-top: -1%; */
   padding-bottom: 20px;
-  margin-top: 40px;
 }
 .social-links-footer {
   height: 60px;
@@ -788,9 +787,6 @@ td input::placeholder {
     /* height: 380px; */
     padding: 3% 5% 0% 5%;
   }
-  .footer {
-    margin-top: 40px;
-  }
 }
 
 /* Media Query : Nest Hub */
@@ -810,9 +806,6 @@ td input::placeholder {
   }
   .other-links ul li a {
     font-size: 17px;
-  }
-  .footer {
-    margin-top: 30px;
   }
 }
 
