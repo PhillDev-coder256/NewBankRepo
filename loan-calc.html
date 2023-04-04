@@ -1,429 +1,160 @@
 <!DOCTYPE html5>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./loan-calc.css">
-    <link rel="stylesheet" href="./media-queries/@contact-us.css">
-	<link
-     rel="stylesheet"
-     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
-	 <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-    <script src="https://kit.fontawesome.com/ecf5c1768c.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./loan-calc.css" />
+    <link rel="stylesheet" href="./media-queries/@contact-us.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ecf5c1768c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./Pages/footer.js" type="text/javascript" defer></script>
+    <script src="./Pages/header.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="./Pages/taimafrica_styles.css " />
+    <link rel="stylesheet" href="./Pages/taimhome_styles.css" />
     <title>Loan Calculator</title>
-</head>
-<body>
-	<div class="container">
-		<!-- Header -->
-		<div class="header">
-			<div class="logo">
-				<img src="./photos/logo3.png" alt="TAIM AFRICA LOGO">
-			</div>
-			<div class="search">
-				<input type="search" value="" placeholder="Search for Movies, TV Shows, and People ">
-				<i class="fa fa-search" aria-hidden="true"></i>
-				
-			</div>
-			<div class="nav-links hide">
-				<ul>
-					<li>
-						
-					<a href="#">Movies</a></li>
-					<li><a href="#">Series</a></li>
-					<li><a href="#">People</a></li>
-					<li><a href="#">News</a></li>
-					<li><a href="#">Wallet</a></li>
-					<li><a href="#">Jobs</a></li>
-					<div class="account-info">
-						<div onclick="displayHiddenAccountInfoHeader()" class="tggl-icon">
-							<img src="./photos/bg.jpg" alt="Profile">
-							<div class="toggle-dropdown">
-								<i class="fa fa-sort-desc" aria-hidden="true"></i>
-							</div>
-						</div>
-						<br><br><br>
-						<div id="hidden-links-header"> 
-							<ul>
-								<li>
-									<i class="fa fa-user" aria-hidden="true"></i>
-									<a href="./profile.html">My Profile</a></li>
-								<li>
-									<i class="fa fa-tachometer" aria-hidden="true"></i>
-									<a href="">Dashboard</a></li>
-								<li>
-									<i class="fa fa-sign-out" aria-hidden="true"></i>
-									<a href="">Logout</a></li>
-							</ul>
-						</div> 
-						<!-- Function to display hidden links for account -->
-						<script>
-							function displayHiddenAccountInfoHeader(){
-								var i = document.getElementById("hidden-links-header");
-								if(i.style.display === "block"){
-									i.style.display = "none";
-								}else{
-									i.style.display = "block"
-								}
-							}
-						</script>
-					</div>
-				</ul>
-			</div>
-			
-			<div class="toggle-menu">
-				
-				<div class="visible">
-					<i onclick="toggleMenu()" class="fa fa-bars" aria-hidden="true"></i>
-	
-				</div>
-				<div id="toggle">
-					
-					<div class="nav-links">
-						<ul class="left-links">
-							
-							<li>
-								<i  class="fa fa-file-video-o" aria-hidden="true"></i>
-								<a id="link" href="#">Movies</a></li>
-							<li>
-								<i  class="fa fa-video-camera" aria-hidden="true"></i>
-								<a id="link" href="#">Series</a></li>
-							<li>
-								<i class="fa fa-users" aria-hidden="true"></i>
-								<a id="link" href="#">People</a></li>
-							<li>
-								<i class="fa fa-newspaper-o" aria-hidden="true"></i>
-								<a id="link" href="#">News</a></li>
-							<li>
-								<i class="fa fa-money" aria-hidden="true"></i>
-								<a id="link" href="#">Wallet</a></li>
-							<li>
-								<i class="fa fa-briefcase" aria-hidden="true"></i>
-								<a id="link" href="#">Jobs</a></li>
-								<div class="account">
-									<div onclick="displayHiddenAccountInfo()" class="tggl-icon">
-										<img src="./photos/bg.jpg" alt="Profile">
-										<div class="toggle-dropdown">
-											<i class="fa fa-sort-desc" aria-hidden="true"></i>
-										</div>
-									</div>
-									<br><br><br>
-									<div id="hidden-links"> 
-										<ul>
-											<li>
-												<i class="fa fa-user" aria-hidden="true"></i>
-												<a href="./profile.html">My Profile</a></li>
-											<li>
-												<i class="fa fa-tachometer" aria-hidden="true"></i>
-												<a href="">Dashboard</a></li>
-											<li>
-												<i class="fa fa-sign-out" aria-hidden="true"></i>
-												<a href="">Logout</a></li>
-										</ul>
-									</div> 
-									<!-- Function to display hidden links for account -->
-									<script>
-										function displayHiddenAccountInfo(){
-											var i = document.getElementById("hidden-links");
-											if(i.style.display === "block"){
-												i.style.display = "none";
-											}else{
-												i.style.display = "block"
-											}
-										}
-									</script>
-								</div>
-						</ul>
-						
-					</div>
-				</div>
-			</div>
-				<!-- Function to toggle menu on mobile view -->
-				<script>
-					function toggleMenu(){
-						var i = document.getElementById("toggle");
-						if(i.style.display === "block"){
-							i.style.display = "none"
-						}else{
-							i.style.display = "block"
-					}
-					}
-					
-				</script>
-				<div class="logout-btn">
-					<button type="button">LogOut</button>
-				</div>
-		</div>
-	
-		<!-- Main Content -->
-		<div class="main">
-			<div class="left-widget">
-				<br><br><br><br>
-				<div class="title">
-					<p>Loan Calculator</p>
-				</div>
-				<br>
-				<div class="form">
-					<form action="">
-						<div class="select">
-							<div class="left-dropdown">
-								<select name="" id="">
-									<option value="">Choose Loan Type</option>
-									<option value="">Option 1</option>
-									<option value="">Option 2</option>
-								</select>
-							</div>
-							<div class="right-dropdown">
-								<select name="" id="">
-									<option value="">Choose Amount</option>
-									<option value="">Option 1</option>
-									<option value="">Option 2</option>
-								</select>
-							</div>
-							
-						</div>
-						<input type="submit" value="CALCULATE LOAN">
-						<div class="table">
-							<table>
-								<tbody>
-									<tr>
-										<td class="label">Required Credit Score</td>
-										<td><input placeholder="_ _ _" type="number"></td>
-									</tr>
-									<tr>
-										<td class="label">1 USD =</td>
-										<td><input placeholder="_ _ _" type="number"></td>
-									</tr>
-									<tr>
-										<td class="label">Loan Amount</td>
-										<td><input placeholder="_ _ _" type="number"></td>
-									</tr>
-									<tr>
-										<td class="label">Loan Period</td>
-										<td><input placeholder="_ _ _" type="number"></td>
-									</tr>
-									<tr>
-										<td class="label">Weekly Interest Rate</td>
-										<td><input placeholder="_ _ _" type="number"></td>
-									</tr>
-									<tr>
-										<td class="label">Total Payback Amount</td>
-										<td><input placeholder="_ _ _" type="number"></td>
-									</tr>
-									<tr>
-										<td class="label">Installment Per Week</td>
-										<td><input placeholder="_ _ _" type="number"></td>
-									</tr>
-									<tr>
-										<td class="label">Early Payback Discount</td>
-										<td><input placeholder="_ _ _" type="number"></td>
-									</tr>
-									<tr>
-										<td class="label">Next Loan Limit</td>
-										<td><input placeholder="_ _ _" type="number"></td>
-									</tr>
-								</tbody>
-								
-							</table>
-						</div>
-						
-					</form>
-					
-				</div>
-			</div>
-			<div class="right-widget">
-				<br><br><br><br>
-				
-				<div class="right-column hidden">
-					<div class="top-stories">
-						<div class="title">
-							<p>TOP STORIES</p>
-						</div>
-						<div class="rows">
-							<div class="row">
-								<a href="">
-									<div class="left">
-										<img src="./photos/squid.jpeg" alt="">
-									</div>
-									<div class="right">
-										<h1>SQUID GAME BACK IN CINEMA</h1>
-									<hr>
-									<p>Netflix confirms the viral rumors about  the return of the famour game show this November...</p>
-									<button type="button">READ MORE</button>
-									</div>
-									
-									
-								</a>
-								
-							</div>
-							<div class="row">
-								<a href="">
-									<div class="left">
-										<img src="./photos/squid.jpeg" alt="">
-									</div>
-									<div class="right">
-										<h1>SQUID GAME BACK IN CINEMA</h1>
-									<hr>
-									<p>Netflix confirms the viral rumors about  the return of the famour game show this November...</p>
-									<button type="button">READ MORE</button>
-									</div>
-									
-									
-								</a>
-								
-							</div>
-						</div>
-						
-					</div>
-					
-				</div>
-			</div>
-			
-		</div>
-	
-		<!-- Footer -->
-		<div class="footer">
-			<div class="social-links-footer">
-				<div class="logo">
-					<img src="./photos/logo3.png" alt="">
-				</div>
-				<div class="icon">
-					<ul>
-						<li>
-							<a href="">
-								<i class="fa fa-facebook-official" aria-hidden="true"></i>
-							<span>facebook</span>
-							</a>
-							
-						</li>
-						<li>
-							<a href="">
-								<i class="fa fa-twitter" aria-hidden="true"></i>
-							<span>twitter</span>
-							</a>
-							
-						</li>
-						<li>
-							<a href="">
-								<i class="fa fa-linkedin" aria-hidden="true"></i>
-							<span>LinkedIn</span>
-							</a>
-							
-						</li>
-						<li>
-							<a href="">
-								<i class="fa fa-youtube-play" aria-hidden="true"></i>
-								<span>YouTube</span>
-							</a>
-							
-						</li>
-					</ul>
-					
-				</div>
-	
-			</div>
-			<hr>
-			<div class="other-links">
-				<div class="columns">
-					<div class="row1">
-						<div class="col">
-							<h4>THE AGENCY</h4>
-							<ul>
-								<li><a href="">About Us</a></li>
-								<li><a href="">Our Partners</a></li>
-								<li><a href="">Work With Us</a></li>
-								<li><a href="">Our Programs</a></li>
-							</ul>
-			
-						</div>
-						<div class="col">
-							<h4>EXPLORE</h4>
-							<ul>
-								<li><a href="">	Recently Added</a></li>
-								<li><a href="">Trending Series</a></li>
-								<li><a href="">Trending Movies</a></li>
-								<li><a href="">Recommended Films</a></li>
-							</ul>
-			
-						</div>
-					</div>
-		
-					<div class="row1">
-						<div class="col">
-							<h4>GENRES</h4>
-							<ul>
-								<li><a href="">Action</a></li>
-								<li><a href="">Comedy</a></li>
-								<li><a href="">Love</a></li>
-								<li><a href="">Horror</a></li>
-							</ul>
-			
-						</div>
-			
-						<div class="col">
-							<h4>QUICK LINKS</h4>
-							<ul>
-								<li><a href="">My Account</a></li>
-								<li><a href="">FAQ</a></li>
-								<li><a href="">Help Centre</a></li>
-								<li><a href="">Contact Us</a></li>
-							</ul>
-			
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="copyright">
-				<p>Copyright &copy; 2023 TAIM AFRICA [One Film Spot For All]
-					<br>
-					<br>
-					
-				</p>
-				<div class="buttons">
-					<button id="mytogglebtn" >
-						Dark mode
-					</button>
-					<!-- Function to toggle dark and light modes -->
-					<script>
-	
-						const toggleBtn = document.getElementById('mytogglebtn');
-						const container = document.querySelector('.container');
-						
-						toggleBtn.addEventListener('click', function(){
-							if (mytogglebtn.textContent === 'Light mode') {
-								mytogglebtn.textContent = 'Dark mode';
-							} else {
-								mytogglebtn.textContent = 'Light mode';
-							}
-							container.classList.toggle('dark-mode');
-						});
-					</script>
-					<select name="lang" id="">
-						<option value="">English</option>
-						<option value="">Luganda</option>
-						<option value="">Kiswahili</option>
-						<option value="">Germany</option>
-						<option value="">French</option>
-						<option value="">Arabic</option>
-						<option value="">Chinese</option>
-					</select>
-					
-				</div>
-	
-				
-				
-			</div>
-		</div>
-	</div>
-	
-</body>
-<script src="./Script/contact-us.js"></script>
-<script>
-	const phoneInputField = document.querySelector("#phone");
-	phone.style.width = "100%"
-	const phoneInput = window.intlTelInput(phoneInputField, {
-		utilsScript:
-		"https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-	});
-</script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+
+      <!-- Main Content -->
+      <div class="main">
+        <div class="left-widget">
+          <br /><br /><br /><br />
+          <div class="title">
+            <p>Loan Calculator</p>
+          </div>
+          <br />
+          <div class="form">
+            <form action="">
+              <div class="select">
+                <div class="left-dropdown">
+                  <select name="" id="">
+                    <option value="">Choose Loan Type</option>
+                    <option value="">Option 1</option>
+                    <option value="">Option 2</option>
+                  </select>
+                </div>
+                <div class="right-dropdown">
+                  <select name="" id="">
+                    <option value="">Choose Amount</option>
+                    <option value="">Option 1</option>
+                    <option value="">Option 2</option>
+                  </select>
+                </div>
+              </div>
+              <input type="submit" value="CALCULATE LOAN" />
+              <div class="table">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="label">Required Credit Score</td>
+                      <td><input placeholder="_ _ _" type="number" /></td>
+                    </tr>
+                    <tr>
+                      <td class="label">1 USD =</td>
+                      <td><input placeholder="_ _ _" type="number" /></td>
+                    </tr>
+                    <tr>
+                      <td class="label">Loan Amount</td>
+                      <td><input placeholder="_ _ _" type="number" /></td>
+                    </tr>
+                    <tr>
+                      <td class="label">Loan Period</td>
+                      <td><input placeholder="_ _ _" type="number" /></td>
+                    </tr>
+                    <tr>
+                      <td class="label">Weekly Interest Rate</td>
+                      <td><input placeholder="_ _ _" type="number" /></td>
+                    </tr>
+                    <tr>
+                      <td class="label">Total Payback Amount</td>
+                      <td><input placeholder="_ _ _" type="number" /></td>
+                    </tr>
+                    <tr>
+                      <td class="label">Installment Per Week</td>
+                      <td><input placeholder="_ _ _" type="number" /></td>
+                    </tr>
+                    <tr>
+                      <td class="label">Early Payback Discount</td>
+                      <td><input placeholder="_ _ _" type="number" /></td>
+                    </tr>
+                    <tr>
+                      <td class="label">Next Loan Limit</td>
+                      <td><input placeholder="_ _ _" type="number" /></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="right-widget">
+          <br /><br /><br /><br />
+
+          <div class="right-column hidden">
+            <div class="top-stories">
+              <div class="title">
+                <p>TOP STORIES</p>
+              </div>
+              <div class="rows">
+                <div class="row">
+                  <a href="">
+                    <div class="left">
+                      <img src="./photos/squid.jpeg" alt="" />
+                    </div>
+                    <div class="right">
+                      <h1>SQUID GAME BACK IN CINEMA</h1>
+                      <hr />
+                      <p>
+                        Netflix confirms the viral rumors about the return of
+                        the famour game show this November...
+                      </p>
+                      <button type="button">READ MORE</button>
+                    </div>
+                  </a>
+                </div>
+                <div class="row">
+                  <a href="">
+                    <div class="left">
+                      <img src="./photos/squid.jpeg" alt="" />
+                    </div>
+                    <div class="right">
+                      <h1>SQUID GAME BACK IN CINEMA</h1>
+                      <hr />
+                      <p>
+                        Netflix confirms the viral rumors about the return of
+                        the famour game show this November...
+                      </p>
+                      <button type="button">READ MORE</button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+    </div>
+  </body>
+  <script src="./Script/contact-us.js"></script>
+  <script>
+    const phoneInputField = document.querySelector("#phone");
+    phone.style.width = "100%";
+    const phoneInput = window.intlTelInput(phoneInputField, {
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+  </script>
 </html>

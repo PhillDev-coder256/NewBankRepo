@@ -110,35 +110,35 @@ template.innerHTML = `
 </div>
 `;
 
- 
-// Function to display hidden links for account
-    function displayHiddenAccountInfoHeader(){
-        var i = document.getElementById("hidden-links-header");
-        if(i.style.display === "block"){
-            i.style.display = "none";
-        }else{
-            i.style.display = "block"
-        }
-    }
 
 // Function to display hidden links for account
-                            function displayHiddenAccountInfo(){
-                                var i = document.getElementById("hidden-links");
-                                if(i.style.display === "block"){
-                                    i.style.display = "none";
-                                }else{
-                                    i.style.display = "block"
-                                }
-                            }
+function displayHiddenAccountInfoHeader() {
+    var i = document.getElementById("hidden-links-header");
+    if (i.style.display === "block") {
+        i.style.display = "none";
+    } else {
+        i.style.display = "block"
+    }
+}
+
+// Function to display hidden links for account
+function displayHiddenAccountInfo() {
+    var i = document.getElementById("hidden-links");
+    if (i.style.display === "block") {
+        i.style.display = "none";
+    } else {
+        i.style.display = "block"
+    }
+}
 
 // Function to toggle menu on mobile view
-        function toggleMenu(){
-            var i = document.getElementById("toggle");
-            if(i.style.display === "block"){
-                i.style.display = "none"
-            }else{
-                i.style.display = "block"
-        }
-        }
+function toggleMenu() {
+    var i = document.getElementById("toggle");
+    if (i.style.display === "block") {
+        i.style.display = "none"
+    } else {
+        i.style.display = "block"
+    }
+}
 
 document.body.appendChild(template.content)

@@ -59,19 +59,6 @@ body, html{
 .dark-mode .lower-section .vision{
     background: #000;
 }
-.dark-mode .footer{
-    background: #000;
-    color: #fff;
-}
-.dark-mode .footer .other-links .columns .row1 .col h4{
-    color: #fff;
-}
-.dark-mode .header .logo{
-    color: #292828;
-}
-.dark-mode .footer .logo{
-    color: #292828;
-}
 .dark-mode #toggle .nav-links{
     background: #000;
 }
@@ -81,9 +68,6 @@ body, html{
 .dark-mode a,
 .dark-mode .social-links a{
     color: rgb(0, 255, 255);
-}
-.dark-mode .footer{
-    border-top: 1px solid #292828;
 }
 .dark-mode .buttons button,.dark-mode select{
     color: rgb(0, 255, 255);
@@ -506,140 +490,6 @@ body, html{
 }
 .lower-section .vision ol{
     margin: 1% 0 0 3%;
-}
-
-
-/* Footer */
-.footer{
-    background-color: #0c0b5c;
-    width: 100%;
-    padding-bottom: 20px;
-}
-.social-links-footer{
-    height: 60px;
-    width: 99.5%;
-    display: flex;
-    align-items: center;
-    border-top: 2px solid #fff;
-}
-.social-links-footer .logo{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    width: 10%;
-    margin-right: auto;
-}
-.social-links-footer .logo img{
-    width: 100%;
-}
-.icon{
-    display: flex;
-    width: 55% ;
-    margin-left: auto;
-    margin-right: 2%;
-}
-.icon ul {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin-left: auto;
-}
-.icon ul li{
-    list-style: none;
-    width: 25%;
-    text-align: right;
-}
-
-.icon ul li a span{
-    margin-left: 15%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    text-align: right;
-}
-
-.icon ul li a{
-    color: #fff;
-    text-decoration: none;
-    display: flex;
-    float: right;
-    
-}
-.icon ul li i{
-    width: 15px;
-    height: 15px;
-    margin-right: 5px;
-    color: #fff;
-}
-
-.other-links{
-    width: 100%;
-}
-.row1{
-    width: 45%;
-    display: inline-flex;
-    align-items: center;
-    color: #fff;
-    margin: 0 2%;
-}
-.col{
-    flex: 50%;
-    
-}
-.col h4{
-    margin-top: 20px;
-    margin-bottom: 4px;
-    color: aqua;
-    
-}
-.col ul{
-    margin-left: 0%;
-}
-.col ul li{
-    list-style: none;
-}
-
-.col ul li a{
-    text-decoration: none;
-    color: #fff;
-    transition: ease-in 0.3s;
-}
-.col ul li a:hover{
-    opacity: 0.7;
-}
-
-
-.copyright{
-    color: #fff;
-}
-
-.copyright p{
-    font-size: small;
-    text-align: center;
-    margin: 30px 1% 30px 0%;
-}
-.copyright button, select{
-    cursor: pointer;
-    border-radius: 7px;
-    padding: 3% 1% ;
-    font-weight: bold;
-    color: blue;
-    margin: 0 5%;
-    width: 130px;
-}
-.copyright button:hover, select:hover{
-    color: #fff;
-    background-color: #454343;
-    transition: ease 0.4s;
-    
-}
-.copyright .buttons{
-    display: flex;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    margin-top: -30px;
-    
 }
 
 

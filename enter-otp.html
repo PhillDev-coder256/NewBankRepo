@@ -1,175 +1,50 @@
 <!DOCTYPE html5>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./enter-otp.css">
-    <link rel="stylesheet" href="./media-queries/@contact-us.css">
-    <script src="https://kit.fontawesome.com/ecf5c1768c.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./enter-otp.css" />
+    <link rel="stylesheet" href="./media-queries/@contact-us.css" />
+    <script
+      src="https://kit.fontawesome.com/ecf5c1768c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./Pages/footer.js" type="text/javascript" defer></script>
+    <script src="./Pages/header.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="./Pages/taimafrica_styles.css " />
+    <link rel="stylesheet" href="./Pages/taimhome_styles.css" />
     <title>Enter OTP</title>
-</head>
-<body>
-	<div class="container">
-		<!-- Header -->
-		<div class="header">
-			<div class="logo">
-				<img src="./photos/logo.png" alt="TAIM AFRICA LOGO">
-			</div>
-			<div class="search">
-				<input type="search" value="" placeholder="Search for Movies, TV Shows, and People ">
-				<i class="fa fa-search" aria-hidden="true"></i>
-				
-			</div>
-			<div class="nav-links hide">
-				<ul>
-					<li>
-						
-					<a href="#">Movies</a></li>
-					<li><a href="#">Series</a></li>
-					<li><a href="#">People</a></li>
-					<li><a href="#">News</a></li>
-					<li><a href="#">Wallet</a></li>
-					<li><a href="#">Jobs</a></li>
-					<div class="account-info">
-						<div onclick="displayHiddenAccountInfoHeader()" class="tggl-icon">
-							<img src="./photos/bg.jpg" alt="Profile">
-							<div class="toggle-dropdown">
-								<i class="fa fa-sort-desc" aria-hidden="true"></i>
-							</div>
-						</div>
-						<br><br><br>
-						<div id="hidden-links-header"> 
-							<ul>
-								<li>
-									<i class="fa fa-user" aria-hidden="true"></i>
-									<a href="./profile.html">My Profile</a></li>
-								<li>
-									<i class="fa fa-tachometer" aria-hidden="true"></i>
-									<a href="">Dashboard</a></li>
-								<li>
-									<i class="fa fa-sign-out" aria-hidden="true"></i>
-									<a href="">Logout</a></li>
-							</ul>
-						</div> 
-						<!-- Function to display hidden links for account -->
-						<script>
-							function displayHiddenAccountInfoHeader(){
-								var i = document.getElementById("hidden-links-header");
-								if(i.style.display === "block"){
-									i.style.display = "none";
-								}else{
-									i.style.display = "block"
-								}
-							}
-						</script>
-					</div>
-				</ul>
-			</div>
-			
-			<div class="toggle-menu">
-				
-				<div class="visible">
-					<i onclick="toggleMenu()" class="fa fa-bars" aria-hidden="true"></i>
-	
-				</div>
-				<div id="toggle">
-					
-					<div class="nav-links">
-						<ul class="left-links">
-							
-							<li>
-								<i  class="fa fa-file-video-o" aria-hidden="true"></i>
-								<a id="link" href="#">Movies</a></li>
-							<li>
-								<i  class="fa fa-video-camera" aria-hidden="true"></i>
-								<a id="link" href="#">Series</a></li>
-							<li>
-								<i class="fa fa-users" aria-hidden="true"></i>
-								<a id="link" href="#">People</a></li>
-							<li>
-								<i class="fa fa-newspaper-o" aria-hidden="true"></i>
-								<a id="link" href="#">News</a></li>
-							<li>
-								<i class="fa fa-money" aria-hidden="true"></i>
-								<a id="link" href="#">Wallet</a></li>
-							<li>
-								<i class="fa fa-briefcase" aria-hidden="true"></i>
-								<a id="link" href="#">Jobs</a></li>
-								<div class="account">
-									<div onclick="displayHiddenAccountInfo()" class="tggl-icon">
-										<img src="./photos/bg.jpg" alt="Profile">
-										<div class="toggle-dropdown">
-											<i class="fa fa-sort-desc" aria-hidden="true"></i>
-										</div>
-									</div>
-									<br><br><br>
-									<div id="hidden-links"> 
-										<ul>
-											<li>
-												<i class="fa fa-user" aria-hidden="true"></i>
-												<a href="./profile.html">My Profile</a></li>
-											<li>
-												<i class="fa fa-tachometer" aria-hidden="true"></i>
-												<a href="">Dashboard</a></li>
-											<li>
-												<i class="fa fa-sign-out" aria-hidden="true"></i>
-												<a href="">Logout</a></li>
-										</ul>
-									</div> 
-									<!-- Function to display hidden links for account -->
-									<script>
-										function displayHiddenAccountInfo(){
-											var i = document.getElementById("hidden-links");
-											if(i.style.display === "block"){
-												i.style.display = "none";
-											}else{
-												i.style.display = "block"
-											}
-										}
-									</script>
-								</div>
-						</ul>
-						
-					</div>
-				</div>
-			</div>
-				<!-- Function to toggle menu on mobile view -->
-				<script>
-					function toggleMenu(){
-						var i = document.getElementById("toggle");
-						if(i.style.display === "block"){
-							i.style.display = "none"
-						}else{
-							i.style.display = "block"
-					}
-					}
-					
-				</script>
-				<div class="logout-btn">
-					<button type="button">LogOut</button>
-				</div>
-		</div>
-	
-		<!-- Main Content -->
-		<div class="main">
-			<div class="left-widget">
-				<div class="p-1">
-					<br><br><br><br>
-					<p class="progress">Step 3</p>
-					<p>A comfirmation code (OTP) has been sent to the provided phone number. To redirect you to your wallet, kindly check your inbox and fill in the filled below to comfirm that this phone number belongs to you.</p>
-					<br>
-					<p>
-						Didn't receive code?
-						<a href="">Request OTP again</a>
-					</p>
-				</div>
-				
-				<div class="form">
-					<form action="">
-						<div class="row">
-							<p class="text">Enter OTP</p>
-							<!-- <div class="country">
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+
+      <!-- Main Content -->
+      <div class="main">
+        <div class="left-widget">
+          <div class="p-1">
+            <br /><br /><br /><br />
+            <p class="progress">Step 3</p>
+            <p>
+              A comfirmation code (OTP) has been sent to the provided phone
+              number. To redirect you to your wallet, kindly check your inbox
+              and fill in the filled below to comfirm that this phone number
+              belongs to you.
+            </p>
+            <br />
+            <p>
+              Didn't receive code?
+              <a href="">Request OTP again</a>
+            </p>
+          </div>
+
+          <div class="form">
+            <form action="">
+              <div class="row">
+                <p class="text">Enter OTP</p>
+                <!-- <div class="country">
 								<select name="" id="">
 									<option value="">Country</option>
 									<option value="">Uganda</option>
@@ -178,209 +53,74 @@
 									<option value="">Rwanda</option>
 								</select>
 							</div> -->
-						</div>
-						
-							<div class="input-wrapper">
-								<!-- <select name="country_code" id="country_code">
+              </div>
+
+              <div class="input-wrapper">
+                <!-- <select name="country_code" id="country_code">
 									<option value="+256">Uganda(+256)</option>
 								</select> -->
-								<label for="tel-no">OTP</label>
-								<i class="fa fa-key" aria-hidden="true"></i>
-								
-								<input type="tel" placeholder="" maxlength="6">
-								<a href="create-pin.html">
-									<input type="button"  value="SUBMIT">
-								</a>
-								
-							</div>
-							<p>Already have an account? <a href="./index.html">Sign In!</a></p>
-					</form>
-				</div>
-			</div>
-			<div class="right-widget">
-				<br><br><br><br><br>
-				<div class="right-column hidden">
-					<div class="top-stories">
-						<div class="title">
-							<p>TOP STORIES</p>
-						</div>
-						<div class="rows">
-							<div class="row">
-								<a href="">
-									<div class="left">
-										<img src="./photos/squid-game.jpg" alt="">
-									</div>
-									<div class="right">
-										<h1>SQUID GAME BACK IN CINEMA</h1>
-									<hr>
-									<p>Netflix confirms the viral rumors about  the return of the famour game show this November...</p>
-									<button type="button">READ MORE</button>
-									</div>
-									
-									
-								</a>
-								
-							</div>
-							<div class="row">
-								<a href="">
-									<div class="left">
-										<img src="./photos/squid-game.jpg" alt="">
-									</div>
-									<div class="right">
-										<h1>SQUID GAME BACK IN CINEMA</h1>
-									<hr>
-									<p>Netflix confirms the viral rumors about  the return of the famour game show this November...</p>
-									<button type="button">READ MORE</button>
-									</div>
-									
-									
-								</a>
-								
-							</div>
-						</div>
-						
-					</div>
-					
-				</div>
-			</div>
-            
+                <label for="tel-no">OTP</label>
+                <i class="fa fa-key" aria-hidden="true"></i>
+
+                <input type="tel" placeholder="" maxlength="6" />
+                <a href="create-pin.html">
+                  <input type="button" value="SUBMIT" />
+                </a>
+              </div>
+              <p>
+                Already have an account? <a href="./index.html">Sign In!</a>
+              </p>
+            </form>
+          </div>
         </div>
-	
-		<!-- Footer -->
-		<div class="footer">
-			<div class="social-links-footer">
-				<div class="logo">
-					<img src="./photos/logo3.png" alt="">
-				</div>
-				<div class="icon">
-					<ul>
-						<li>
-							<a href="">
-								<i class="fa fa-facebook-official" aria-hidden="true"></i>
-							<span>facebook</span>
-							</a>
-							
-						</li>
-						<li>
-							<a href="">
-								<i class="fa fa-twitter" aria-hidden="true"></i>
-							<span>twitter</span>
-							</a>
-							
-						</li>
-						<li>
-							<a href="">
-								<i class="fa fa-linkedin" aria-hidden="true"></i>
-							<span>LinkedIn</span>
-							</a>
-							
-						</li>
-						<li>
-							<a href="">
-								<i class="fa fa-youtube-play" aria-hidden="true"></i>
-								<span>YouTube</span>
-							</a>
-							
-						</li>
-					</ul>
-					
-				</div>
-	
-			</div>
-			<hr>
-			<div class="other-links">
-				<div class="columns">
-					<div class="row1">
-						<div class="col">
-							<h4>THE AGENCY</h4>
-							<ul>
-								<li><a href="">About Us</a></li>
-								<li><a href="">Our Partners</a></li>
-								<li><a href="">Work With Us</a></li>
-								<li><a href="">Our Programs</a></li>
-							</ul>
-			
-						</div>
-						<div class="col">
-							<h4>EXPLORE</h4>
-							<ul>
-								<li><a href="">	Recently Added</a></li>
-								<li><a href="">Trending Series</a></li>
-								<li><a href="">Trending Movies</a></li>
-								<li><a href="">Recommended Films</a></li>
-							</ul>
-			
-						</div>
-					</div>
-		
-					<div class="row1">
-						<div class="col">
-							<h4>GENRES</h4>
-							<ul>
-								<li><a href="">Action</a></li>
-								<li><a href="">Comedy</a></li>
-								<li><a href="">Love</a></li>
-								<li><a href="">Horror</a></li>
-							</ul>
-			
-						</div>
-			
-						<div class="col">
-							<h4>QUICK LINKS</h4>
-							<ul>
-								<li><a href="">My Account</a></li>
-								<li><a href="">FAQ</a></li>
-								<li><a href="">Help Centre</a></li>
-								<li><a href="">Contact Us</a></li>
-							</ul>
-			
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="copyright">
-				<p>Copyright &copy; 2023 TAIM AFRICA [One Film Spot For All]
-					<br>
-					<br>
-					
-				</p>
-				<div class="buttons">
-					<button id="mytogglebtn" >
-						Dark mode
-					</button>
-					<!-- Function to toggle dark and light modes -->
-					<script>
-	
-						const toggleBtn = document.getElementById('mytogglebtn');
-						const container = document.querySelector('.container');
-						
-						toggleBtn.addEventListener('click', function(){
-							if (mytogglebtn.textContent === 'Light mode') {
-								mytogglebtn.textContent = 'Dark mode';
-							} else {
-								mytogglebtn.textContent = 'Light mode';
-							}
-							container.classList.toggle('dark-mode');
-						});
-					</script>
-					<select name="lang" id="">
-						<option value="">English</option>
-						<option value="">Luganda</option>
-						<option value="">Kiswahili</option>
-						<option value="">Germany</option>
-						<option value="">French</option>
-						<option value="">Arabic</option>
-						<option value="">Chinese</option>
-					</select>
-					
-				</div>
-	
-				
-				
-			</div>
-		</div>
-	</div>
-	
-</body>
-<script src="./Script/contact-us.js"></script>
+        <div class="right-widget">
+          <br /><br /><br /><br /><br />
+          <div class="right-column hidden">
+            <div class="top-stories">
+              <div class="title">
+                <p>TOP STORIES</p>
+              </div>
+              <div class="rows">
+                <div class="row">
+                  <a href="">
+                    <div class="left">
+                      <img src="./photos/squid-game.jpg" alt="" />
+                    </div>
+                    <div class="right">
+                      <h1>SQUID GAME BACK IN CINEMA</h1>
+                      <hr />
+                      <p>
+                        Netflix confirms the viral rumors about the return of
+                        the famour game show this November...
+                      </p>
+                      <button type="button">READ MORE</button>
+                    </div>
+                  </a>
+                </div>
+                <div class="row">
+                  <a href="">
+                    <div class="left">
+                      <img src="./photos/squid-game.jpg" alt="" />
+                    </div>
+                    <div class="right">
+                      <h1>SQUID GAME BACK IN CINEMA</h1>
+                      <hr />
+                      <p>
+                        Netflix confirms the viral rumors about the return of
+                        the famour game show this November...
+                      </p>
+                      <button type="button">READ MORE</button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+    </div>
+  </body>
+  <script src="./Script/contact-us.js"></script>
 </html>

@@ -1,244 +1,234 @@
-
-.main .title-label{
-    display: none;
+.main .title-label {
+  display: none;
 }
-.main-content .section-2 .main{
-    width: 100%;
-    
+.main-content .section-2 .main {
+  width: 100%;
 }
-.main .content p{
-    font-weight: bold;
-    color: #000000;
+.main .content p {
+  font-weight: bold;
+  color: #000000;
 }
-.dark-mode .main .content p{
-    color: #cac8c8;
+.dark-mode .main .content p {
+  color: #cac8c8;
 }
 
-.section-2 .main .head{
-    background: #6052d8;
-    display: flex;
-    margin: 0 5%;
-    
+.section-2 .main .head {
+  background: #6052d8;
+  display: flex;
+  margin: 0 5%;
 }
-.dark-mode .section-2 .main .head{
-    background: #000;
-    border: 1px solid gray;
+.dark-mode .section-2 .main .head {
+  background: #000;
+  border: 1px solid gray;
 }
-.section-2 .main .head ul{
-    width: 100%;
+.section-2 .main .head ul {
+  width: 100%;
+  display: flex;
+  padding: 3% 5%;
+  list-style: none;
+  justify-content: space-between;
+  justify-items: left;
+}
+.section-2 .main .head ul li hr {
+  width: 100%;
+  margin-top: 5px;
+}
+.section-2 .main .head ul li a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 15px;
+}
+.section-2 .main .head ul li a:hover {
+  opacity: 0.6;
+}
+.section-2 .main .content {
+  margin: 0 5%;
+  /* border: 1px solid; */
+}
+.section-2 .main .content .span {
+  border: 1.5px solid gray;
+  width: 100%;
+  margin: 2% 0;
+  padding: 4% 2%;
+  /* align-items: center; */
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+}
+.section-2 .main .content .span .middle p {
+  font-weight: bold;
+  opacity: 0.7;
+}
+.section-2 .main .content .span .left {
+  /* background: darkblue; */
+  /* align-items: center; */
+  display: grid;
+  /* padding: 20% 3%; */
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  border: 2px solid gray;
+}
+.section-2 .main .content .span .left .p-1 {
+  border-bottom: 1px solid gray;
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
+.section-2 .main .content .span .left .p-2 {
+  border-top: 1px solid gray;
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
+.dark-mode .section-2 .main .content .span .left {
+  background: #000;
+  border: 1px solid gray;
+}
+.section-2 .main .content .span .left p {
+  text-align: center;
+}
+.section-2 .main .content .span .middle {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5%;
+}
+.section-2 .main .content .span .middle p {
+  margin: 0px 0;
+}
+.section-2 .main .content .span .right {
+  display: grid;
+  grid-template-columns: 100px;
+  /* border: 1px solid; */
+  /* align-items: center; */
+}
+.section-2 .main .content .span .right a {
+  display: grid;
+  width: 100%;
+  align-items: center;
+  margin: 0 0 0 10%;
+  text-decoration: none;
+}
+.section-2 .main .content .span .right a button {
+  background: #2600ff;
+  padding: 10% 9px;
+  /* border: 2px solid  gray; */
+  border-radius: 3px;
+  outline: none;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.dark-mode .section-2 .main .content .span .right a button {
+  color: rgb(0, 255, 255);
+  background: #000;
+}
+.section-2 .main .content .span .right a button:hover {
+  opacity: 0.7;
+}
+.section-2 .main .content .span .left .p-1,
+.section-2 .main .content .span .left .p-2 {
+  padding: 5% 0;
+}
+
+@media screen and (max-width: 1250px) {
+  .section-2 .main .content .span {
+    grid-template-columns: 20% 55% 25%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section-2 .main .content .span {
+    grid-template-columns: 15% 50% 27%;
+    margin: 7% 0;
+  }
+  .section-2 .main .content .span .middle p {
+    font-size: 13px;
+  }
+  .section-2 .main .content .span .left .p-1,
+  .section-2 .main .content .span .left .p-2 {
+    font-size: 13px;
+  }
+  .main-content #hide-menu {
+    /* border: 1px solid; */
+    display: grid;
+    grid-template-columns: 5% 93%;
+  }
+  .main-content #hide-menu .right {
     display: flex;
-    padding: 3% 5%;
-    list-style: none;
+    align-items: center;
     justify-content: space-between;
-    justify-items: left;
-}
-.section-2 .main .head ul li hr{
+    /* border: 1px solid; */
     width: 100%;
-    margin-top: 5px;
-}
-.section-2 .main .head ul li a{
+  }
+  .main-content #hide-menu .right a {
+    text-decoration: none;
     color: #fff;
     font-weight: bold;
-    text-decoration: none;
+    padding: 0.5% 2%;
+    border: 1px solid #fff;
+    border-radius: 2px;
+  }
+  .main-content #hide-menu .right a:hover {
+    opacity: 0.7;
+  }
+  .main-content #hide-menu .left {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 835px) {
+  .section-2 .main .content .span {
+    margin: 7% 0;
     font-size: 15px;
+  }
 }
-.section-2 .main .head ul li a:hover{
-    opacity: 0.6;
-}
-.section-2 .main .content{
-    margin: 0 5%;
-    /* border: 1px solid; */
-}
-.section-2 .main .content .span{
-    border: 1.5px solid gray;
-    width: 100%;
-    margin: 2% 0;
-    padding: 4% 2%;
-    /* align-items: center; */
-    display: grid;
-    grid-template-columns: 20% 60% 20%;
-}
-.section-2 .main .content .span .middle p{
-    font-weight: bold;
-    opacity: 0.7;
-}
-.section-2 .main .content .span .left{
-    /* background: darkblue; */
-    /* align-items: center; */
-    display: grid;
-    /* padding: 20% 3%; */
-    border-radius: 5px;
-    color: #fff;
-    font-weight: bold;
-    border: 2px solid gray;
-}
-.section-2 .main .content .span .left .p-1{
-    border-bottom: 1px solid gray;
-    display: grid;
-    align-items: center;
-    text-align: center;
-}
-.section-2 .main .content .span .left .p-2{
-    border-top: 1px solid gray;
-    display: grid;
-    align-items: center;
-    text-align: center;
-}
-.dark-mode .section-2 .main .content .span .left{
-    background: #000;
-    border: 1px solid gray;
-}
-.section-2 .main .content .span .left p{
-    text-align: center;
-}
-.section-2 .main .content .span .middle{
-    display: flex;
-    flex-direction: column;
-    margin: 0 5%;
-
-}
-.section-2 .main .content .span .middle p{
-    margin: 0px 0;
-}
-.section-2 .main .content .span .right{
-    display: grid;
-    grid-template-columns: 100px;
-    /* border: 1px solid; */
-    /* align-items: center; */
-}
-.section-2 .main .content .span .right a{
-    display: grid;
-    width: 100%;
-    align-items: center;
-    margin: 0 0 0 10%;
-    text-decoration: none;
-}
-.section-2 .main .content .span .right a button{
-    background: #2600ff;
-    padding: 10% 9px;
-    /* border: 2px solid  gray; */
-    border-radius: 3px;
-    outline: none;
-    color: #ffffff;
-    font-weight: bold;
-    cursor: pointer;
-}
-.dark-mode .section-2 .main .content .span .right a button{
-    color: rgb(0, 255, 255);
-    background: #000;
-}
-.section-2 .main .content .span .right a button:hover{
-    opacity: 0.7;
-}
-.section-2 .main .content .span .left .p-1 ,
-    .section-2 .main .content .span .left .p-2{
-        padding: 5% 0;
-    }
-
-@media screen and (max-width: 1250px){
-    .section-2 .main .content .span {
-        grid-template-columns: 20% 55% 25%;
-    }
-}
-@media screen and (max-width: 1024px){
-    .section-2 .main .content .span{
-        grid-template-columns: 15% 50% 27%;
-        margin: 7% 0;
-    }
-    .section-2 .main .content .span .middle p{
-        font-size: 13px;
-    }
-    .section-2 .main .content .span .left .p-1,
-    .section-2 .main .content .span .left .p-2{
-        font-size: 13px;
-
-    }
-    .main-content #hide-menu{
-        /* border: 1px solid; */
-        display: grid;
-        grid-template-columns: 5% 93%;
-    }
-    .main-content #hide-menu .right{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        /* border: 1px solid; */
-        width: 100%;
-    }
-    .main-content #hide-menu .right a{
-        text-decoration: none;
-        color: #fff;
-        font-weight: bold;
-        padding: 0.5% 2%;
-        border: 1px solid #fff;
-        border-radius: 2px;
-    }
-    .main-content #hide-menu .right a:hover{
-        opacity: 0.7;
-    }
-    .main-content #hide-menu .left{
-        width: 100%;
-    }
-}
-@media screen and (max-width: 835px){
-    .section-2 .main .content .span{
-        margin: 7% 0;
-        font-size: 15px;
-    }
-}
-@media screen and (max-width: 777px){
-    .section-2 .main .content .span{
-        margin: 10% 0;
-        font-size: 13px;
-    }
+@media screen and (max-width: 777px) {
+  .section-2 .main .content .span {
+    margin: 10% 0;
+    font-size: 13px;
+  }
 }
 /* This   is   where the mobile view starts */
-@media screen and (max-width: 720px){
-    .section-2 .main .content .span{
-        /* grid-template-columns: 20% 60% 20%; */
-    }
-        .main-content{
-            display: block;
-        }
-        .main-content .section-2 .main{
-            display: block;
-            
-        }
-        .section-2 .main .content .span{
-            margin: 5% 0;
-            font-size: 15px;
-        }
-    }
-    @media screen and (max-width: 390px){
-        .section-2 .main .content .span{
-            margin: 5% 0;
-            font-size: 10px;
-            grid-template-columns: 20% 50% 30%;
-        }
-        
-        .section-2 .main .content .span .right a button{
-            font-size: 10px;
-            margin-right: 20%;
-        }
-        .section-2 .main .head ul li a{
-            font-size: 12px;
-        }
-    }
-    @media screen and (max-width: 300px){
-        .section-2 .main .content .span{
-            margin: 5% 0;
-            /* font-size: 2px; */
-        }
-        .section-2 .main .content .span .middle p{
-            /* border: 1px solid; */
-            font-size: 10px;
-        }
-        .section-2 .main .content .span .left .p-1,
-        section-2 .main .content .span .left .p-1{
-            font-size: 9px;
-        }
-        .section-2 .main .content .span .right a button{
-            font-size: 1px;
-        }
-    }
-    
+@media screen and (max-width: 720px) {
+  .main-content {
+    display: block;
+  }
+  .main-content .section-2 .main {
+    display: block;
+  }
+  .section-2 .main .content .span {
+    margin: 5% 0;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .section-2 .main .content .span {
+    margin: 5% 0;
+    font-size: 10px;
+    grid-template-columns: 20% 50% 30%;
+  }
+
+  .section-2 .main .content .span .right a button {
+    font-size: 10px;
+    margin-right: 20%;
+  }
+  .section-2 .main .head ul li a {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .section-2 .main .content .span {
+    margin: 5% 0;
+    /* font-size: 2px; */
+  }
+  .section-2 .main .content .span .middle p {
+    /* border: 1px solid; */
+    font-size: 10px;
+  }
+  .section-2 .main .content .span .left .p-1,
+  section-2 .main .content .span .left .p-1 {
+    font-size: 9px;
+  }
+  .section-2 .main .content .span .right a button {
+    font-size: 1px;
+  }
+}

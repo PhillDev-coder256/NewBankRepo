@@ -1,84 +1,9 @@
 
-<!DOCTYPE html>
-<html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="taimafrica_styles.css ">
-	<link rel="stylesheet" href="taimhome_styles.css">
-    <link rel="stylesheet" href="cropme.min.css">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<script src="https://kit.fontawesome.com/ecf5c1768c.js" crossorigin="anonymous"></script>
-    
-		<title>Taim Africa</title>
+const templateFooter = document.createElement('templateFooter');
 
-</head>
-<body>
-<div class="container">
-
-	<!-- Header -->
-	<header>
-        <nav>
-            <div class="nav-left">
-
-                <div class="logo">
-                        <img class="logo-img" src="./logo3.png" alt="logo">
-                    </div>
-        
-                    <div class="search">
-                        <form action="">
-                            <input name="q" class="input" type="text" placeholder="Search for movies, Tv shows and people">
-                            <button type="submit"> <i class="fa fa-search"></i> </button>
-                        </form>
-                    </div>
-            </div>
-            
-
-
-            <ul class="navlinks">
-				<div class="links-container">
-					<a id="homeLink" class="myLink" href=""> <i class="fa fa-home"></i> <strong>Home</strong> </a>
-					<a class="myLink" href=""> <i class="fa fa-film"></i> <strong>Movies</strong> </a>
-					<a class="myLink" href=""> <i class="fa fa-tv"></i> <strong>Series</strong> </a>
-					<a class="myLink" href=""> <i class="fa fa-certificate"></i> <strong>Events</strong> </a>
-					<a class="myLink" href=""> <i class="fa fa-newspaper"></i> <strong>News</strong> </a>
-					<a class="myLink" href=""> <i class="fa fa-briefcase"></i> <strong>Jobs</strong> </a>
-					<a class="myLink" href=""> <i class="fa fa-users"></i> <strong>People</strong> </a>
-					
-					<a class="myLink" href=""> <i class="fa fa-edit"></i><strong>Blogs</strong> </a>
-						
-				</div>
-
-                    <img class="prof-image" src="" alt="image">
-                    <i style="margin-left: 5px;" id="arrow" class="fa fa-sort-down"></i>
-					<div class="prof-icon">
-
-                        <ul class="prof-board">
-                            <a href=""><i class="fa fa-user"></i> My Profile</a>
-                            <a href=" "><i class="fa fa-th-list"></i> Dashboard</a>
-                            <a href=""><i class="fa fa-close"></i> Logout</a>
-                        </ul>
-
-                    </div>
-                    <a class="logOut-button" href=""> <strong>Login</strong> </a>
-
-            </ul>
-
-            <div class="burger">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-
-        </nav>
-    </header>
-
-
-	<div class="main">
-    </div>
-    
-    <br>
-
-	<div class="footer">
+templateFooter.innerHTML = `
+<br> <br>
+<div class="footer">
 		<div class="social-links">
 			<div class="logo" style="border: none; height: 80%;">
 				<img  class="logo-img2" src="logo3.png" alt="logo">
@@ -126,7 +51,7 @@
 					<div class="col">
 						<h4>THE AGENCY</h4>
 						<ul>
-							<li><a href="">About Us</a></li>
+							<li><a href="../HomePage/AboutUs/index-about.html">About Us</a></li>
 							<li><a href="">Our Partners</a></li>
 							<li><a href="">Work With Us</a></li>
 							<li><a href="">Our Programs</a></li>
@@ -163,7 +88,7 @@
 							<li><a href="">My Account</a></li>
 							<li><a href="">FAQ</a></li>
 							<li><a href="">Help Centre</a></li>
-							<li><a href="">Contact Us</a></li>
+							<li><a href="../HomePage/ContactUs-TaimAfrica/index-contact.html">Contact Us</a></li>
 						</ul>
 		
 					</div>
@@ -198,21 +123,42 @@
 						<option value="">Chinese</option>
 					</select>
 				</div>
-				
-				
 
-				<style>
-					
-				</style>
-				<!-- Function to toggle dark and light modes -->
-				<script>
+				
+				
+				
+				
+			</div>
+			<script>
+				const showNav = ()=>{
+					const burger = document.querySelector('.burger');
+					const links = document.querySelector('.navlinks');
+		
+					burger.addEventListener('click', (e)=>{
+						e.preventDefault();
+						burger.classList.toggle('.burger-active')
+						links.classList.toggle('links-active');
+					})
+				}
+		
+				showNav();
+			</script>
+			
+			
+		</div>
+	</div>
+`;
+
+document.body.appendChild(templateFooter)
+
+// Function to toggle dark and light modes 
 
 					
 					
 					const changeMode = () =>{
 						const toggleBtn = document.getElementById('mytogglebtn');
 						const lighttoggleBtn = document.getElementById('ightmytogglebtn');
-						const container = document.querySelector('.container');
+						const container = document.querySelector('body');
 						// const logo = document.querySelector('.logo-img')
 						// const logo2 = document.querySelector('.logo-img2')
 
@@ -244,7 +190,7 @@
 
 					const checkMode = () =>{
 						var mode_status = localStorage.getItem('mode');
-						const container = document.querySelector('.container');
+						const container = document.querySelector('body');
 						const lighttoggleBtn = document.getElementById('ightmytogglebtn');
 						const toggleBtn = document.getElementById('mytogglebtn');
 						// const logo = document.querySelector('.logo-img')
@@ -271,31 +217,5 @@
 					}
 
 					checkMode();
-				</script>
-				
-				
-			</div>
-			<script>
-				const showNav = ()=>{
-					const burger = document.querySelector('.burger');
-					const links = document.querySelector('.navlinks');
-		
-					burger.addEventListener('click', (e)=>{
-						e.preventDefault();
-						burger.classList.toggle('.burger-active')
-						links.classList.toggle('links-active');
-					})
-				}
-		
-				showNav();
-			</script>
-			
-			
-		</div>
-	</div>
-	
-</div>
-<script src="taim_global.js"></script>
 
-</body>
-</html>
+

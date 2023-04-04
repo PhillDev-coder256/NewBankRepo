@@ -1,214 +1,203 @@
+.main .title-label {
+  display: none;
+}
+.main-content .section-2 .main {
+  width: 100%;
+}
+.dark-mode .main .content p {
+  color: #cac8c8;
+}
+.section-2 .main .container .wallet {
+  margin: 5%;
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+}
+.container .wallet .wallet-info {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* margin: 0 10%; */
+  font-weight: bold;
+}
+.container .wallet .wallet-info .left {
+  border-right: 1.5px solid;
+  padding: 2% 0;
+  width: 50%;
+  text-align: center;
+}
+.container .wallet .wallet-info .right {
+  border-left: 1.5px solid;
+  padding: 2% 0;
+  width: 50%;
+  text-align: center;
+}
+.container .wallet #progressBar {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1% 29% 70%;
+  border: 0px solid red;
+  margin: 5% 0;
+  background: #fff;
+}
+.dark-mode .container .wallet #progressBar {
+  background: #000;
+  /* border: 1px solid blue; */
+}
+.container .wallet #progressBar #bar-green {
+  /* border: 1px solid; */
+  background: #15ff00;
+  height: 3px;
+}
+.dark-mode .container .wallet #progressBar #bar-green {
+  background: #464545;
+}
+.container .wallet #progressBar .progress {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  z-index: 1;
+  background: darkblue;
+}
+.dark-mode .container .wallet #progressBar .progress {
+  background: #000;
+  border: 2px solid gray;
+}
+.container .wallet #progressBar #bar-red {
+  background: red;
+  height: 3px;
+  z-index: 0;
+}
+.dark-mode .container .wallet #progressBar #bar-red {
+  background: rgb(0, 255, 255);
+}
+.container .wallet .count-text {
+  width: 100%;
+  text-align: right;
+  justify-content: right;
+  display: grid;
+  grid-template-columns: 1% 34% 66%;
+}
+.container .wallet .count-text p {
+  text-align: right;
+}
+.section-2 .main .container .c-1 {
+  border: 2px solid gray;
+  padding: 2%;
+  margin: 5%;
+}
+.section-2 .main .container .content {
+  border-top: 2px solid gray;
+  border-bottom: 0px solid gray;
+  border-right: 0px solid gray;
+  border-left: 0px solid gray;
+  margin: 2% 0;
+  display: flex;
+  justify-content: space-between;
+}
+.section-2 .main .container .content .c-2 {
+  border: 0px;
+  margin: 1% 0;
+}
+.section-2 .main .container .content .c-2 .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0px;
+  border: 0px;
+}
+.section-2 .main .container .content .c-2 h4 span {
+  color: #6052d8;
+}
+.dark-mode .section-2 .main .container .content .c-2 h4 span {
+  color: rgb(0, 255, 255);
+}
+.section-2 .main .head {
+  background: #6052d8;
+  display: flex;
+  margin: 0 5%;
+}
+.dark-mode .section-2 .main .head {
+  background: #000;
+  border: 1px solid gray;
+}
+.section-2 .main .head ul {
+  width: 100%;
+  display: flex;
+  padding: 3% 5%;
+  list-style: none;
+  justify-content: space-between;
+  justify-items: left;
+}
+.section-2 .main .head ul li hr {
+  width: 100%;
+  margin-top: 5px;
+}
+.section-2 .main .head ul li a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 15px;
+}
+.section-2 .main .head ul li a:hover {
+  opacity: 0.6;
+}
+.section-2 .main .content {
+  margin: 0 5%;
+  /* border: 1px solid; */
+}
 
-.main .title-label{
-    display: none;
+@media screen and (max-width: 1250px) {
 }
-.main-content .section-2 .main{
-    width: 100%;
-    
-}
-.dark-mode .main .content p{
-    color: #cac8c8;
-}
-.main-content .to-flex .section-2 .main .container{
-    /* border: 1px solid red; */
-    /* margin: 0 5%; */
-}
-.section-2 .main .container .wallet{
-    margin: 5%;
+@media screen and (max-width: 1024px) {
+  .main-content #hide-menu {
     /* border: 1px solid; */
-    display: flex;
-    flex-direction: column;
-}
-.container .wallet .wallet-info{
+    display: grid;
+    grid-template-columns: 5% 93%;
+  }
+  .main-content #hide-menu .right {
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
-    /* margin: 0 10%; */
-    font-weight: bold;
-}
-.container .wallet .wallet-info .left{
-    border-right: 1.5px solid;
-    padding: 2% 0;
-    width: 50%;
-    text-align: center;
-}
-.container .wallet .wallet-info .right{
-    border-left: 1.5px solid;
-    padding: 2% 0;
-    width: 50%;
-    text-align: center;
-}
-.container .wallet #progressBar{
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1% 29% 70%;
-    border: 0px solid red;
-    margin: 5% 0;
-    background: #fff;
-
-}
-.dark-mode .container .wallet #progressBar{
-    background: #000;
-    /* border: 1px solid blue; */
-}
-.container .wallet #progressBar #bar-green{
+    justify-content: space-between;
     /* border: 1px solid; */
-    background: #15ff00;
-    height: 3px;
-}
-.dark-mode .container .wallet #progressBar #bar-green{
-    background: #464545;
-}
-.container .wallet #progressBar .progress{
-    height: 20px ;
-    width: 20px;
-    border-radius: 50%;
-    z-index: 1;
-    background: darkblue;
-}
-.dark-mode .container .wallet #progressBar .progress{
-    background: #000;
-    border: 2px solid gray;
-}
-.container .wallet #progressBar #bar-red{
-    background: red;
-    height: 3px;
-    z-index: 0;
-}
-.dark-mode .container .wallet #progressBar #bar-red{
-    background: rgb(0, 255, 255);
-}
-.container .wallet .count-text{
     width: 100%;
-    text-align: right;
-    justify-content: right;
-    display: grid;
-    grid-template-columns: 1% 34% 66%;
-}
-.container .wallet .count-text p{
-    text-align: right;
-}
-.section-2 .main .container .c-1{
-    border: 2px solid gray;
-    padding: 2%;
-    margin: 5%;
-}
-.section-2 .main .container .content{
-    border-top: 2px solid gray;
-    border-bottom: 0px solid gray;
-    border-right: 0px solid gray;
-    border-left: 0px solid gray;
-    margin: 2% 0;
-    display: flex;
-    justify-content: space-between;
-}
-.section-2 .main .container .content .c-2{
-    border: 0px;
-    margin: 1% 0;
-}
-.section-2 .main .container .content .c-2 .row{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0px;
-    border: 0px;
-}
-.section-2 .main .container .content .c-2 h4 span{
-    color: #6052d8;
-}
-.dark-mode .section-2 .main .container .content .c-2 h4 span{
-    color: rgb(0, 255, 255);
-}
-.section-2 .main .head{
-    background: #6052d8;
-    display: flex;
-    margin: 0 5%;
-    
-}
-.dark-mode .section-2 .main .head{
-    background: #000;
-    border: 1px solid gray;
-}
-.section-2 .main .head ul{
-    width: 100%;
-    display: flex;
-    padding: 3% 5%;
-    list-style: none;
-    justify-content: space-between;
-    justify-items: left;
-}
-.section-2 .main .head ul li hr{
-    width: 100%;
-    margin-top: 5px;
-}
-.section-2 .main .head ul li a{
+  }
+  .main-content #hide-menu .right a {
+    text-decoration: none;
     color: #fff;
     font-weight: bold;
-    text-decoration: none;
+    padding: 0.5% 2%;
+    border: 1px solid #fff;
+    border-radius: 2px;
+  }
+  .main-content #hide-menu .right a:hover {
+    opacity: 0.7;
+  }
+  .main-content #hide-menu .left {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 835px) {
+  .section-2 .main .content .span {
+    margin: 7% 0;
     font-size: 15px;
+  }
 }
-.section-2 .main .head ul li a:hover{
-    opacity: 0.6;
-}
-.section-2 .main .content{
-    margin: 0 5%;
-    /* border: 1px solid; */
-}
-
-@media screen and (max-width: 1250px){
-    
-}
-@media screen and (max-width: 1024px){
-    .main-content #hide-menu{
-        /* border: 1px solid; */
-        display: grid;
-        grid-template-columns: 5% 93%;
-    }
-    .main-content #hide-menu .right{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        /* border: 1px solid; */
-        width: 100%;
-    }
-    .main-content #hide-menu .right a{
-        text-decoration: none;
-        color: #fff;
-        font-weight: bold;
-        padding: 0.5% 2%;
-        border: 1px solid #fff;
-        border-radius: 2px;
-    }
-    .main-content #hide-menu .right a:hover{
-        opacity: 0.7;
-    }
-    .main-content #hide-menu .left{
-        width: 100%;
-    }
-}
-@media screen and (max-width: 835px){
-    .section-2 .main .content .span{
-        margin: 7% 0;
-        font-size: 15px;
-    }
-}
-@media screen and (max-width: 777px){
-    .section-2 .main .content .span{
-        margin: 10% 0;
-        font-size: 13px;
-    }
+@media screen and (max-width: 777px) {
+  .section-2 .main .content .span {
+    margin: 10% 0;
+    font-size: 13px;
+  }
 }
 /* This   is   where the mobile view starts */
-@media screen and (max-width: 720px){
-        .main-content{
-            display: block;
-        }
-        .main-content .section-2 .main{
-            display: block;
-            
-        }
-    }
-    @media screen and (max-width: 390px){
-    }
-    @media screen and (max-width: 300px){
-    }
-    
+@media screen and (max-width: 720px) {
+  .main-content {
+    display: block;
+  }
+  .main-content .section-2 .main {
+    display: block;
+  }
+}
+@media screen and (max-width: 390px) {
+}
+@media screen and (max-width: 300px) {
+}
