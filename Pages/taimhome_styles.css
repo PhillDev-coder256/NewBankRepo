@@ -232,8 +232,9 @@ form .input {
 }
 
 .container {
-  height: 100%;
+  /* height: 10%; */
   width: 100%;
+  margin-bottom: 2%;
 }
 
 .main-content {
@@ -547,11 +548,11 @@ form .input {
   justify-content: space-around;
   align-items: center;
   /* height: 50%; */
-  width: 30%;
+  /* width: 40%; */
   cursor: pointer;
   border: 1px solid rgb(121, 120, 120);
   text-align: center;
-  padding: 2% 5%;
+  padding: 2% 10%;
   border-radius: 3px;
   font-size: 12px;
 }
@@ -617,7 +618,7 @@ form .input {
   /* Movies and Serie Soans */
   .caption p {
     font-size: 18px;
-    margin-top: 340px;
+    /* margin-top: 340px; */
   }
   .rate p {
     color: blue;
@@ -841,6 +842,10 @@ form .input {
   .col ul li a {
     font-size: smaller;
   }
+  .copyright .buttons .left span,
+.copyright .buttons .right select{
+
+}
 }
 
 /* Media Query : Surface Duo */
