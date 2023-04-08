@@ -183,7 +183,7 @@ nav .navlinks {
   display: none;
   position: absolute;
   right: 5px;
-  top: 1vh;
+  /* top: 1vh; */
   border: #ffffff solid 1px;
   border-radius: 5px;
   cursor: pointer;
