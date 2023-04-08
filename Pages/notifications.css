@@ -71,3 +71,16 @@
   /* height: 100%; */
   margin: 0% 2%;
 }
+.section-2 .main .spans .container .right p a{
+  text-decoration: none;
+  font-weight: bold;
+}
+.dark-mode .section-2 .main .spans .container .right p a{
+  color: rgb(0, 255, 255);
+}
+.dark-mode .section-2 .main .spans .container .right p a:hover{
+  opacity: 0.7;
+}
+.section-2 .main .spans .container .right p a:hover{
+  color: #ffbb00;
+}
