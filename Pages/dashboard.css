@@ -590,6 +590,9 @@ html {
   background: #000000;
   /* margin: 0 0 0 2%; */
 }
+.section-1 .content .links ul li i{
+  display: none;
+}
 .section-1 .content .links ul li a {
   text-decoration: none;
   font-weight: bold;
@@ -601,8 +604,6 @@ html {
 .section-1 .content .links ul li a:hover {
   opacity: 0.7;
   transition: ease-in 0.1s;
-}
-.main {
 }
 .main .left-widget {
   /* border: 1px solid red; */
@@ -1459,6 +1460,34 @@ td input::placeholder {
     font-weight: bold;
     /* padding: 20%; */
   }
+  
+  .section-1 .content{
+    /* border: 1px solid green; */
+    background: #efeff3;
+    width: 96%;
+    padding: 0px;
+  }
+  .section-1 .content .links{
+    padding: 2% 8%;
+  }
+  .section-1 .content .links ul li{
+    display: flex;
+    margin: 4% 0;
+    /* border: 1px solid; */
+  }
+  .section-1 .content .links ul li span{
+    display: none;
+  }
+  .section-1 .content .links ul li i{
+    display: block;
+    width: 7%;
+  }
+  .section-1 .content .links ul li a{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    
+  }
 
   /* .section-3 .people .p-1 */
   .main-content #hide-links {
@@ -1667,6 +1696,7 @@ td input::placeholder {
   .section-1 .content .links ul li {
     font-size: 15px;
   }
+  
   .main-content .to-flex {
     display: block;
   }
