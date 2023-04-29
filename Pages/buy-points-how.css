@@ -45,10 +45,10 @@
   background: #6052d8;
   display: flex;
   /* margin: 0 5%; */
-  width: 100%;
-  position: fixed;
-  top: 140px;
-  width: 43%;
+  /* width: 100%; */
+  /* position: fixed;
+  top: 140px; */
+  /* width: 100%; */
   margin: 0 2%;
 }
 .dark-mode .section-2 .main .head {
@@ -217,8 +217,8 @@
   .section-2 .main .head {
     display: flex;
     margin: 2% 5% 20% 5%;
-    width: 90%;
-    position: fixed;
+    /* width: 90%; */
+    /* position: fixed; */
     /* width: 43%; */
     /* margin: 0 2%; */
   }

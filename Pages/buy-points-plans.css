@@ -16,10 +16,10 @@
   background: #6052d8;
   /* display: flex; */
   /* margin: 0 5%; */
-  width: 100%;
-  position: fixed;
-  top: 140px;
-  width: 43%;
+  /* width: 100%; */
+  /* position: fixed; */
+  /* top: 140px; */
+  /* width: 43%; */
   margin: 0 2%;
 }
 .dark-mode .section-2 .main .head {
@@ -180,8 +180,8 @@
     width: 100%;
   }
   .section-2 .main .head {
-    top: 110px;
-    width: 45%;
+    /* top: 110px; */
+    /* width: 45%; */
   }
 }
 @media screen and (max-width: 835px) {
@@ -213,8 +213,8 @@
     font-size: 15px;
   }
   .section-2 .main .head {
-    top: 130px;
-    width: 96%;
+    /* top: 130px;
+    width: 96%; */
   }
 }
 @media screen and (max-width: 390px) {
