@@ -44,9 +44,10 @@
 .section-2 .main .head {
   background: #6052d8;
   display: flex;
-  margin: 0 5%;
+  /* margin: 0 5%; */
   width: 100%;
   position: fixed;
+  top: 140px;
   width: 43%;
   margin: 0 2%;
 }
