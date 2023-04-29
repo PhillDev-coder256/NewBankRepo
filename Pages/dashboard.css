@@ -445,6 +445,14 @@ html {
   display: grid;
   grid-template-columns: 22% 78%;
 }
+.main-content .cover{
+  height: 50px; 
+  width: 100%; 
+  z-index: 2;
+  background-color: #ffffff; 
+  position: fixed;
+  top: 50px;
+}
 .main-content #hide-menu {
   /* border: 1px solid red; */
   display: none;
@@ -452,7 +460,7 @@ html {
   position: fixed;
   /* top: 0; */
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   /* height: 30px; */
   /* margin: 0 1%; */
   align-items: center;
