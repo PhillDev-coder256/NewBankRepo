@@ -453,6 +453,9 @@ html {
   position: fixed;
   top: 50px;
 }
+.dark-mode .main-content .cover{
+  background: #000;
+}
 .main-content #hide-menu {
   /* border: 1px solid red; */
   display: none;
@@ -1478,7 +1481,7 @@ td input::placeholder {
     height: 100%;
   }
   .section-1 .content .links{
-    padding: 2% 8%;
+    padding: 3% 8%;
   }
   .section-1 .content .links ul li{
     display: flex;
