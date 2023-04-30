@@ -1362,11 +1362,53 @@ td input::placeholder {
   .dark-mode .section-1 .content {
     background: #000;
   }
-  .section-1 .content .links ul li {
-    margin: 0;
-    padding: 2% 0;
+  .section-1 .content .links ul{
+    display: block;
+    width: 100%;
+    /* border: 1px solid red; */
+  }
+  .section-1 .content .links ul .row{
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    margin: 5% 0;
+    padding: 3% 0;
+    border: 1px solid rgb(173, 214, 224);
+  }
+  .section-1 .content .links ul .row li {
+    display: block;
     border: 0px;
-    /* font-weight: none; */
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid; */
+  }
+  .section-1 .content .links ul .row li{
+    display: block;
+    border: 0px;
+    align-items: center;
+    text-align: center;
+    background: #bdd1f7;
+    border-radius: 5px;
+    margin: 0 2%;
+  
+  }
+  .section-1 .content .links ul .row li .icon{
+    
+  }
+  .section-1 .content .links ul .row li .icon i{
+    display: flex;
+    font-size: 20px;
+    background: #1566e0;
+    width: 30px;
+    height: 30px;
+  }
+  .section-1 .content .links ul .row li span{
+    display: none;
+  }
+  .section-1 .content .links ul .row li a{
+    display: flex;
+    border: 0px;
+    text-align: center;
   }
   .wallet .content .p-loan .label,
   .wallet .content .b-loan .label {
@@ -1480,27 +1522,7 @@ td input::placeholder {
     /* margin: -60px 0 0 0; */
     height: 100%;
   }
-  .section-1 .content .links{
-    padding: 3% 8%;
-  }
-  .section-1 .content .links ul li{
-    display: flex;
-    margin: 4% 0;
-    /* border: 1px solid; */
-  }
-  .section-1 .content .links ul li span{
-    display: none;
-  }
-  .section-1 .content .links ul li i{
-    display: block;
-    width: 7%;
-  }
-  .section-1 .content .links ul li a{
-    border: 0px;
-    margin: 0px;
-    padding: 0px;
-    
-  }
+  
 
   /* .section-3 .people .p-1 */
   .main-content #hide-links {
