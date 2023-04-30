@@ -1360,20 +1360,36 @@ td input::placeholder {
     /* border: 1px solid; */
   }
   .dark-mode .section-1 .content {
-    background: #000;
+    /* background: #000; */
+  }
+  .section-1 .content{
+    /* border: 1px solid;
+    margin: 0px;
+    padding: 0px;
+    width: 100%; */
+  }
+  .section-1 .content .links{
+    /* border: 1px solid red;
+    width: 100%;
+    margin: 0px;
+    padding: 0px; */
   }
   .section-1 .content .links ul{
     display: block;
     width: 100%;
+    background: #061566e5;
+    padding: 5% 0 40% 0;
+    margin: 0;
     /* border: 1px solid red; */
   }
   .section-1 .content .links ul .row{
     display: flex;
     align-items: center;
     border-radius: 4px;
-    margin: 5% 0;
-    padding: 3% 0;
-    border: 1px solid rgb(173, 214, 224);
+    border: 0px;
+    /* margin: 5% 0; */
+    /* padding: 3% 0; */
+    /* border: 1px solid rgb(173, 214, 224); */
   }
   .section-1 .content .links ul .row li {
     display: block;
@@ -1387,28 +1403,48 @@ td input::placeholder {
     border: 0px;
     align-items: center;
     text-align: center;
-    background: #bdd1f7;
-    border-radius: 5px;
-    margin: 0 2%;
+    /* background: #bdd1f7; */
+    /* border-radius: 5px; */
+    /* margin: 0 2%; */
+    /* padding: 2%; */
   
   }
-  .section-1 .content .links ul .row li .icon{
-    
+  .section-1 .content .links ul .row li .icon-wallet{
+    border-radius: 20px;
+    height: 30px;
+    width: 70px;
+    border: 1px solid rgb(0, 173, 253);
+    margin: 1%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
-  .section-1 .content .links ul .row li .icon i{
+  .section-1 .content .links ul .row li .icon-wallet i{
     display: flex;
     font-size: 20px;
-    background: #1566e0;
-    width: 30px;
-    height: 30px;
+  }
+  .section-1 .content .links ul .row li .icon-wallet:hover{
+    background: #fff;
+    transition: 1s ease-in;
   }
   .section-1 .content .links ul .row li span{
     display: none;
   }
   .section-1 .content .links ul .row li a{
     display: flex;
+    align-items: center;
+    justify-content: center;
     border: 0px;
+    margin: 5px 0;
+    color: #ffffff;
+    font-weight: none;
+    padding: 0px;
     text-align: center;
+    font-size: 15px;
+  }
+  .section-1 .content .links ul .row li a:hover{
+    color:#ffb300;
+    opacity: 1;
   }
   .wallet .content .p-loan .label,
   .wallet .content .b-loan .label {
