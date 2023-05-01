@@ -1353,7 +1353,7 @@ td input::placeholder {
     position: absolute;
     top: 16%;
     left: 0;
-    background: #ffffff;
+    /* background: #ffffff; */
 
     /* margin */
     /* transition: ease-in-out 1s; */
