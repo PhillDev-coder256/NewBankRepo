@@ -1335,7 +1335,6 @@ td input::placeholder {
     display: none;
     background: #ffffff;
     z-index: 1;
-    /* position: fixed; */
   }
   .dark-mode .main-content .section-1 {
     background: #000;
@@ -1353,26 +1352,6 @@ td input::placeholder {
     position: absolute;
     top: 16%;
     left: 0;
-    /* background: #ffffff; */
-
-    /* margin */
-    /* transition: ease-in-out 1s; */
-    /* border: 1px solid; */
-  }
-  .dark-mode .section-1 .content {
-    /* background: #000; */
-  }
-  .section-1 .content{
-    /* border: 1px solid;
-    margin: 0px;
-    padding: 0px;
-    width: 100%; */
-  }
-  .section-1 .content .links{
-    /* border: 1px solid red;
-    width: 100%;
-    margin: 0px;
-    padding: 0px; */
   }
   .section-1 .content .links ul{
     display: block;
@@ -1392,18 +1371,12 @@ td input::placeholder {
     border: 0px;
     margin: 0px;
     padding: 0px;
-    /* border: 1px solid; */
   }
   .section-1 .content .links ul .row li{
     display: block;
     border: 0px;
     align-items: center;
     text-align: center;
-    /* background: #bdd1f7; */
-    /* border-radius: 5px; */
-    /* margin: 0 2%; */
-    /* padding: 2%; */
-  
   }
   .section-1 .content .links ul .row li .icon-wallet{
     border-radius: 20px;
@@ -1429,7 +1402,6 @@ td input::placeholder {
   .section-1 .content .links ul .row li .icon-wallet:hover{
     background: #ffb300;
     transition: 1s ease-in;
-    
   }
   .section-1 .content .links ul .row li span{
     display: none;
@@ -1497,11 +1469,9 @@ td input::placeholder {
     font-size: 14px;
   }
   .main-content .section-1 .content {
-    /* border: 1px solid; */
     margin: 0 2%;
   }
   .main-content .section-3 {
-    /* border: 1px solid green; */
     margin: 10% 2% 0 2%;
   }
   .section-3 .people {
@@ -1528,11 +1498,9 @@ td input::placeholder {
   .section-3 .people .p-1 .right .p-row {
     display: flex;
     flex-direction: row-reverse;
-    /* border: 1px solid; */
     text-align: left;
     margin: 0;
     padding: 0;
-    /* height: 10px; */
   }
   .section-3 .people #hide-1 {
     display: none;
@@ -1551,15 +1519,12 @@ td input::placeholder {
     display: flex;
     align-items: center;
     font-weight: bold;
-    /* padding: 20%; */
   }
   
   .section-1 .content{
-    /* border: 1px solid green; */
     background: #ffffff;
     width: 96%;
     padding: 0px;
-    /* margin: -60px 0 0 0; */
     height: 100%;
   }
   
@@ -1594,7 +1559,6 @@ td input::placeholder {
     align-items: center;
     color: #fff;
     margin: 0 2%;
-    /* border: 1px; */
   }
   .row .right h1 {
     font-size: 16px;
@@ -1621,9 +1585,6 @@ td input::placeholder {
   }
   .card a .title h4 {
     font-size: 18px;
-  }
-  .rows .row a h1 {
-    /* font-size: 20px; */
   }
   .rows .row a button {
     font-size: small;
