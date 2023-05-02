@@ -43,11 +43,6 @@
 .dark-mode .main .content .next .tria {
   border-bottom: 20px solid #c9c2c2;
 }
-.section-2 .main{
-  /* border: 1px solid green; */
-  /* margin: 0 2%; */
-  /* width: 42%; */
-}
 .section-2 .main .head {
   background: #6052d8;
   /* border: 1px solid red; */
@@ -55,7 +50,7 @@
   width: 43%;
   display: flex;
   margin: 0 2%;
-  
+
   /* margin: 0 2%; */
 }
 .dark-mode .section-2 .main .head {
@@ -187,7 +182,7 @@
   .main-content #hide-menu .left {
     width: 100%;
   }
-  .section-2 .main .head{
+  .section-2 .main .head {
     position: fixed;
     top: 130px;
     width: 45%;
