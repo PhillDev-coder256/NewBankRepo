@@ -581,10 +581,16 @@ html {
 .section-1 .content .links ul {
   text-decoration: none;
 }
-.section-1 .content .links ul li {
+.section-1 .content .links ul .row{
+  /* border: 1px solid red; */
+  margin: 0;
+  border: 0px;
+}
+.section-1 .content .links ul .row li {
   display: grid;
-  grid-template-columns: 5% 95%;
+  grid-template-columns: 10% 90%;
   width: 100%;
+  /* border: 1px solid red; */
   /* height: 20px; */
   /* padding-top: 12%; */
   border-bottom: 1px solid;
@@ -594,15 +600,16 @@ html {
   padding: 5% 2%;
   align-items: center;
 }
-.section-1 .content .links ul li span {
+.section-1 .content .links ul .row li span {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background: #000000;
+  display: none;
   /* margin: 0 0 0 2%; */
 }
-.section-1 .content .links ul li i{
-  display: none;
+.section-1 .content .links ul .row li i{
+  display: block;
 }
 .section-1 .content .links ul li a {
   text-decoration: none;
@@ -1356,7 +1363,7 @@ td input::placeholder {
   .section-1 .content .links ul{
     display: block;
     width: 100%;
-    background: #061566e5;
+    /* background: #061566e5; */
     padding: 5% 0 35% 0;
     margin: 0;
   }
@@ -1365,6 +1372,7 @@ td input::placeholder {
     align-items: center;
     border-radius: 4px;
     border: 0px;
+    margin: 5% 0;
   }
   .section-1 .content .links ul .row li {
     display: block;
@@ -1383,13 +1391,16 @@ td input::placeholder {
     height: 40px;
     width: 70px;
     border: 1px solid rgb(0, 173, 253);
-    margin: 1%;
+    margin: 1% 0 ;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+  .dark-mode .section-1 .content .links ul .row li .icon-wallet{
+    border: 1px solid gray;
   }
   .section-1 .content .links ul .row li .icon-wallet i{
     display: flex;
@@ -1421,6 +1432,16 @@ td input::placeholder {
   .section-1 .content .links ul .row li a:hover{
     color:#ffb300;
     opacity: 1;
+  }
+  .section-1 .content{
+    background: #230b79;
+    width: 96%;
+    padding: 0px;
+    height: 85%;
+    transition: 1s ease-in-out ;
+  }
+  .dark-mode .section-1 .content{
+    background: #000;
   }
   .wallet .content .p-loan .label,
   .wallet .content .b-loan .label {
@@ -1521,12 +1542,7 @@ td input::placeholder {
     font-weight: bold;
   }
   
-  .section-1 .content{
-    background: #ffffff;
-    width: 96%;
-    padding: 0px;
-    height: 100%;
-  }
+  
   
 
   /* .section-3 .people .p-1 */

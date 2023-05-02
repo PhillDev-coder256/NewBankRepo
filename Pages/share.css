@@ -1,0 +1,83 @@
+.to-flex .sectio-2 {
+  width: 100%;
+}
+.to-flex .section-2 .main {
+  width: 100%;
+  display: block;
+}
+.section-2 .main .title-label {
+  background: #4e51eb;
+  margin: 2% 5%;
+  padding: 2% 0 2% 5%;
+  color: #fff;
+  font-weight: bold;
+}
+.dark-mode .section-2 .main .title-label {
+  background: #1b1b1b;
+  border: 1px solid gray;
+}
+.section-2 .main ul {
+  margin: 3% 5%;
+  /* border: 1px solid; */
+  display: block;
+  align-items: center;
+  /* border-top: 1px solid; */
+}
+.section-2 .main ul {
+  list-style: none;
+  border-top: 2px solid;
+}
+.section-2 ul li {
+  /* padding-bottom: 5%; */
+  border-bottom: 2px solid;
+}
+.section-2 ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid; */
+  padding: 5% 0;
+}
+.dark-mode .section-2 ul li a {
+  color: #fff;
+}
+.section-2 ul li div {
+  height: 0;
+  width: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 15px solid rgb(151, 140, 140);
+  border-radius: 5px;
+  transform: rotate(90deg);
+}
+.section-2 .advert {
+  border: 1px solid;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  margin: 5% 5%;
+  height: 22%;
+}
+.section-3 .p-text {
+  font-size: 12px;
+}
+/* Media Query : Nest Hub */
+@media screen and (max-width: 1024px) {
+  .section-2 .main .title-label {
+    display: none;
+  }
+  .section-2 .advert {
+    height: 43%;
+  }
+}
+
+/* This   is   where the mobile view starts */
+@media screen and (max-width: 720px) {
+  .section-2 .advert {
+    display: none;
+  }
+}

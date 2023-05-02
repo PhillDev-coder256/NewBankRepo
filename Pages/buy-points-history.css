@@ -99,6 +99,7 @@
   .section-2 .main .head {
     top: 110px;
     width: 45%;
+    z-index: 0;
   }
 }
 @media screen and (max-width: 835px) {
