@@ -585,10 +585,22 @@ html {
   /* border: 1px solid red; */
   margin: 0;
   border: 0px;
+  width: 100%;
+  /* border: 10px solid green; */
 }
-.section-1 .content .links ul .row li {
+.section-1 .content .links ul .row a{
+  color: #000;
+  /* border: 10px solid red;
+  width: 100%; */
+  display: flex;
+  /* width: 100%; */
+  /* border: 1px solid red; */
+  margin: 0px;
+  text-decoration: none;
+}
+.section-1 .content .links ul .row a li {
   display: grid;
-  grid-template-columns: 10% 90%;
+  grid-template-columns: 15% 90%;
   width: 100%;
   /* border: 1px solid red; */
   /* height: 20px; */
@@ -600,7 +612,7 @@ html {
   padding: 5% 2%;
   align-items: center;
 }
-.section-1 .content .links ul .row li span {
+.section-1 .content .links ul .row a li span {
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -608,10 +620,17 @@ html {
   display: none;
   /* margin: 0 0 0 2%; */
 }
-.section-1 .content .links ul .row li i{
-  display: block;
+.section-1 .content .links ul .row a li .icon-wallet{
+  /* border: 1px solid; */
+  width: 100%;
 }
-.section-1 .content .links ul li a {
+.section-1 .content .links ul .row a li .icon-wallet i{
+  display: block;
+  /* border: 1px solid; */
+  width: 100%;
+  border: 0px;
+}
+.section-1 .content .links ul li p {
   text-decoration: none;
   font-weight: bold;
   color: #000;
@@ -1369,24 +1388,27 @@ td input::placeholder {
   }
   .section-1 .content .links ul .row{
     display: flex;
+    /* border: 10px solid red; */
     align-items: center;
+    /* justify-content: flex-start; */
     border-radius: 4px;
     border: 0px;
-    margin: 5% 0;
+    /* margin: 5% 0; */
   }
-  .section-1 .content .links ul .row li {
+  .section-1 .content .links ul .row a {
     display: block;
-    border: 0px;
+    /* border: 0px; */
     margin: 0px;
     padding: 0px;
+    width: 100%;
+    /* border: 1px solid red; */
   }
-  .section-1 .content .links ul .row li{
+  .section-1 .content .links ul .row a li{
+    /* border: 1px solid green; */
     display: block;
     border: 0px;
-    align-items: center;
-    text-align: center;
   }
-  .section-1 .content .links ul .row li .icon-wallet{
+  .section-1 .content .links ul .row a li .icon-wallet{
     border-radius: 20px;
     height: 40px;
     width: 70px;
@@ -1399,10 +1421,10 @@ td input::placeholder {
     justify-content: space-around;
     align-items: center;
   }
-  .dark-mode .section-1 .content .links ul .row li .icon-wallet{
+  .dark-mode .section-1 .content .links ul .row a li .icon-wallet{
     border: 1px solid gray;
   }
-  .section-1 .content .links ul .row li .icon-wallet i{
+  .section-1 .content .links ul .row a li .icon-wallet i{
     display: flex;
     font-size: 20px;
     color: #fff;
@@ -1410,14 +1432,14 @@ td input::placeholder {
     justify-content: space-around;
     z-index: 1;
   }
-  .section-1 .content .links ul .row li .icon-wallet:hover{
+  .section-1 .content .links ul .row a li .icon-wallet:hover{
     background: #ffb300;
     transition: 1s ease-in;
   }
-  .section-1 .content .links ul .row li span{
+  .section-1 .content .links ul .row a li span{
     display: none;
   }
-  .section-1 .content .links ul .row li a{
+  .section-1 .content .links ul .row a li p{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1429,7 +1451,7 @@ td input::placeholder {
     text-align: center;
     font-size: 15px;
   }
-  .section-1 .content .links ul .row li a:hover{
+  .section-1 .content .links ul .row a li p:hover{
     color:#ffb300;
     opacity: 1;
   }
